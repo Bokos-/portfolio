@@ -10,6 +10,7 @@ module.exports = {
       facebook: `boksamartin`
     },
   },
+  pathPrefix: "/portfolio",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
