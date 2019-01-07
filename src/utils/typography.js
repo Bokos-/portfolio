@@ -3,6 +3,17 @@ import Wordpress2016 from 'typography-theme-wordpress-2016'
 
 import { backgroundColor, primaryColor } from './colors'
 
+Wordpress2016.googleFonts = [
+  {
+    name: 'Montserrat',
+    styles: ['300', '400', '700', '900'],
+  },
+  {
+    name: 'Merriweather',
+    styles: ['300', '400', '400i', '700', '700i', '900', '900i'],
+  },
+]
+
 Wordpress2016.overrideThemeStyles = () => ({
   a: {
     color: primaryColor,

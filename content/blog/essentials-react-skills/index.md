@@ -1,5 +1,5 @@
 ---
-title: My First Post!
+title: Essentials React skills!
 date: '2019-01-06T23:03:00'
 ---
 
