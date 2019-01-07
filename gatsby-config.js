@@ -7,10 +7,10 @@ module.exports = {
     social: {
       github: `Bokos-`,
       linkedIn: `martin-boksa`,
-      facebook: `boksamartin`
+      facebook: `boksamartin`,
     },
   },
-  pathPrefix: "/portfolio",
+  pathPrefix: '/portfolio',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -42,7 +42,16 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: '÷',
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
