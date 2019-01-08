@@ -1,7 +1,240 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Martin Bokša Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://martinboksa.eu/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 07 Jan 2019 22:29:02 GMT</lastBuildDate><item><title><![CDATA[Essentials React skills!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
-chicken eggs, though the…]]></description><link>https://martinboksa.eu//essentials-react-skills/</link><guid isPermaLink="false">https://martinboksa.eu//essentials-react-skills/</guid><pubDate>Sun, 06 Jan 2019 22:03:00 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
-&lt;p&gt;Did you know that “despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste &lt;code class=&quot;language-text&quot;&gt;and&lt;/code&gt; texture will be somewhat different, and the
-egg yolk will be less rich.”?
-(&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Martin Bokša Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://martinboksa.eu/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 08 Jan 2019 22:24:41 GMT</lastBuildDate><item><title><![CDATA[Proposal - Necessary React libraries and skills!]]></title><description><![CDATA[Za posledný môj rok som sa stretol s množstvom knižníc, ktoré sa týkajú Reactu.
+Je to dané najmä tým, že som nemal veľké predchádzajúce…]]></description><link>https://martinboksa.eu//necessary-react-libraries/</link><guid isPermaLink="false">https://martinboksa.eu//necessary-react-libraries/</guid><pubDate>Sun, 06 Jan 2019 22:03:00 GMT</pubDate><content:encoded>&lt;p&gt;Za posledný môj rok som sa stretol s množstvom knižníc, ktoré sa týkajú Reactu.
+Je to dané najmä tým, že som nemal veľké predchádzajúce skúsenosti s Reactom
+a zároveň javascript je tak rýchly jazyk, že vychádzá v ňom každý deň
+nové množstvo knižníc.
+Rád by som si tu odložil doterajšie skúsenosti a priblížil vám čo všetko považujem
+dnes za nevynutné vedieť pri práci s Reactom.&lt;/p&gt;
+&lt;h2&gt;Boilerplate (Kostra)&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/create-react-app&quot;&gt;create-react-app&lt;/a&gt;
+ak nemáte skúsenosti s Reactom, táto knižnica vám vytvorí boilerplate (alebo kostru) pre vašu
+aplikáciu. Obsahuje všetky nevyhnuté konfigurácie a závislosti aby ste mohli
+rovno písať React a nemuseli sa o nič starať.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-text&quot;&gt;&lt;pre class=&quot;language-no-text&quot;&gt;&lt;code class=&quot;language-no-text&quot;&gt;What&amp;#39;s included? React, JSX, ES6, TypeScript and Flow syntax support.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Data Store&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/reduxjs/react-redux&quot;&gt;Redux&lt;/a&gt; ide o globálny obchod s premennými. Je vhodný k tomu,
+aby ste nemuseli preposielať premennú cez ďalších &lt;em&gt;x&lt;/em&gt; komponent do hĺbky. Tak ju
+napojíte na globálne obchod. Použitie napríklad: user data, aktuálna téma, stav aplikácie, …
+Používa sa často. Odporúčam si doinštalovať &lt;a href=&quot;https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en&quot;&gt;plugin&lt;/a&gt; do chrome.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.24091778202677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAACDklEQVQozxWRW1PaUBSF8//f2jrtjJ22TkdRCpaLIZeJEIiEJBBJgIRLggkk3KJV6Vjxba8eH/bs/fSdb63D7bcWPa3b9Jxo9ML2v41Oh6xLh12P3rIh7VObVkGT7ucqaQZPR2KBvkvnVLq5pN1cpm0o0yYUaeEXaGR+IO4hVbEcXCJ2RdzPm3jdWHjZGHjZmjjshniIu4jGCqbOFQJXQsviYem/UVQq4Ds87u9ErEMJkfcLI/MTuJQdk06e1kGDUl+hVb9Mf5np40qn18ylt51P+6RHHadBLUug4FagVleiZChRy6iRP1Eom4sUuDlm+Jm4iX6GhS/QwhOxi24Q2TUsezlkkcxMbRy2A7xmfSwCDXxTgOercMwas6rD7fKwzTLSSQXT2zMMjS/gZnYJfvuU0rGE1eyawRWEnTxi+xzPawNPKwOPbNYzDYGjouc1kIzrWAUNzJwynHYRM7fEKrmA22HAaFBFeFuiZFxDPKohncqY2RUENis9vqY/iY7luMEe0rANb+DYCrJFG5Evo69f4o4l62l5uEYeTucY3NzOYe4WKfariEZXbCoMUKbYKzK4gM17t1OFwTQkExVBX0QwqMF7T2bzDCxhZFUxNEsM+A2c1TiCKnwko/4VZvMEev0HTfsXiL0C65Vn5jKLW2efpmLYrUJXc2jKJ9CUnywqSzW+RujVMXEFDMxT/AdRGh4RjQzSbgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Redux&quot;
+        title=&quot;&quot;
+        src=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png&quot;
+        srcset=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/1a291/redux.png 148w,
+/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/2bc4a/redux.png 295w,
+/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png 590w,
+/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/526de/redux.png 885w,
+/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fa2eb/redux.png 1180w,
+/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png 1569w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://reactjs.org/docs/context.html&quot;&gt;React Context&lt;/a&gt; je to pomerne nová feature od Reactu.
+Je teoretickým nahraditeľom Reduxu. Tu sa, ale vytvorí &lt;code class=&quot;language-text&quot;&gt;provider&lt;/code&gt; dát a
+jeho vnútorné komponenty vo vnútri ich vedia čitať pomocou &lt;code class=&quot;language-text&quot;&gt;consumera&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 321px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.40498442367601%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADpklEQVQ4yz2Q21MaZxjGueuf1n+jN7loO+3YdNJmbBMTq2ZSTYwRT2AQUJfzcZFlOS7LAsthASWAICCHMZ5iRXPd9+lnO9OL3+x+O+8+3+99dHdD7e/7kUb348q/3A3LdDss0WRUpouCQEMpQJ1YgJp723RWkdh3jVGhyalGt4ybfpmuugW66OTpopUn3Zdxje5GGu5G5f/53FdxKofQCztRcNugLS2g82wKR347TvNRjLUEPg8e5sq4PingspPHxTGjqUL3ZVSjybCCCTObDDX6i9l100E6q6bYM0zNbIw6GYFOJZ7OazJdNhXq5kTqxv103VHpqp2ny+MsXbYeDAukux9WaTLQcDso0d24goujFPqZMD4dF3CipnCsSpj0ipCUJL7e9GLaxmM3GkMlzjaIenHZVnHeUOi8kcNZPUs6Fsa6KOGmp9JkrOEoaEc/F0NPk9ErpVBXorhpZLDhDuKr1w48MvsghoJY84XQFjwYqiLOGjkaH8oYHWb+C7zusx66ebo6yeMoJaAshnCcj7MBCbVUGPW0gIYSwbbJhpYiIs97YdlzICrw6DLLwaFMg2oaw6pMupt+kS66D6VmaFiTUM9EWVgMTfbjqJpgqwXRzQnIigGY3B60Mgcoij58lHgYOScOQ070WKf9chLdYpx0V6zYT60M2qpIdVlATQqjkYmgwNZpKTwaMo9KzIu2EoTFwSF94ILk5yAzNo1m7Cwto57w0UkhwiTCLLCdo49KGKrgIzXix6CSwEkhjJjLirh7jwUym7QHpQiHmGMHB/s7KAp2aBEnBM6M0L4ZSshJR+kgakk/6c7qEtVSzCLpoxIzaWZ5FKN2JL0WZrGLXNAKNWSGyG0wthDhDMj4zVB5C0KWLZQEDnGHlYqCCxXRRbp+SaRO4QBVyUM1yYNyzAE1vI+ky8QGjUh7DYg71yHa9PB8eAfe+p69rzHWEd5bh9vAztw2ZQO7UPy7pGvneKql3agknFSIcCQHLBR1GYnfXSWX8U+ybSzQvn6OrO9naW/1D7Kzs8uwSK6tRfKZlilo0ZPAbZDo2ELUYSRdXX5Y1Q45YKaEZxs8twafdQX6V9N4+eRbzD/9HvO/fofnjx/h6Q/f4PVvP8L0dgam5RewrMxhX/8KLsMbeHdWELTqSafFnaSwPiLOTfJaVsjGbt9ZnSPD8gxtLf5Oq3O/0PLLn+nti8eMn+jNzBQtPZ+ildkntL4wTZuLz+jDu1myrM6T07BE/wAzG3uw7M6TywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;React Context&quot;
+        title=&quot;&quot;
+        src=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
+        srcset=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/09b75/react-context.png 148w,
+/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/438fb/react-context.png 295w,
+/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png 321w&quot;
+        sizes=&quot;(max-width: 321px) 100vw, 321px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mobxjs/mobx&quot;&gt;MobX&lt;/a&gt; ďalšia možnosť k uskladneniu
+globálnych dát.&lt;/p&gt;
+&lt;h2&gt;Serverová komunikácia&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API&quot;&gt;fetch&lt;/a&gt; natívny príkaz z ES6,
+ktorým je možné dopytovať server. Funguje pomocou &lt;strong&gt;Promise&lt;/strong&gt;, ale chýbajú mu zatiaľ
+nejaké funkcie ako napríklad &lt;strong&gt;abort&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/axios/axios&quot;&gt;Axios&lt;/a&gt; rozšírená verzia &lt;strong&gt;fetch&lt;/strong&gt;, založená tiež
+na &lt;strong&gt;Promise&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; axios &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;axios&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+axios
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/user?ID=12345&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;response&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;response&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/apollographql/apollo-client&quot;&gt;Apollo Client&lt;/a&gt; knižnica s plnou podporou
+pre &lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQL&lt;/a&gt;. Ponúka tiež &lt;a href=&quot;https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm&quot;&gt;dev tools&lt;/a&gt; pre Chrome.
+Odporúčam si to pozrieť. &lt;strong&gt;GraphQL&lt;/strong&gt; v skratke: Viacero dopytov je možné zlúčiť do jedného.
+Alebo namiesto reťazových volaní na server, je možné ich nahradiť za jeden.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 40.59539918809201%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAACLUlEQVQozx2RaU8aARiE+bPtHzCmNjGm3vdJ61YRTIGCcoi7bCmwlnNlOZSgsirKIZ7UkCpWjUnTmW798GTej8+8Y+rUU3hqaPhzVUAjpyArSahnf+DlPIeHWgbtwwRu9Rhu9iJoFmQcJgOQVq3wL1twnBZR1USU4x6UFCcy4hJMnVoSjw2NLxd5XpUSrGkRNvIKnxo5/jpOsnWg8KfBZTHMek6iHvcz6bdT3XSybNwnasBIL4sRB9WAQNPvhvrfkM/nBdwVvTgtRlHfl3BdDqKtx9E6iOK6FEZzR3410WM+yO4JpOTPOEz4sfPdhd2wE5poQWx9AabHuornZp73ehiPe+s8OUjzRt9iJe9ia1/hTSnCy91vPEp6mBVXqQVXuf3VwuyajduijXGPhSm/lQmvwLBjmqansww61QxbewruKmk2C1Fe7IaN6jKrGZkXO0Zu+1gI2pjyCUy6JqhY5xiyzVH6MsItt8CQc5Ehh5mBlUmjsmHYOU2jfZTCQ1WF8Su09qM4y8vGOBJq2gZKETvia2ZsWsYhCoPYMNK7NA7H/ADcnybgXZ42mIJ7cRSm+0qc95XEK1Vtk8eqj0dpHxs5kZW0hwXZStW3SMU5Q58wQuf8AIWhHpr7u2kZ7+PK5AfaF0Zomx3k0mQfTW1d+XtbVmAsiULYjkzQBk22QY+vIydZEXPNIuqcgmQdhV8YwsrYOwx3v0V/1xvM9XfBPNyDj2O9mB/txczge/wDR2z8vnOY3KMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;GraphQL&quot;
+        title=&quot;&quot;
+        src=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png&quot;
+        srcset=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/1a291/graphql.png 148w,
+/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/2bc4a/graphql.png 295w,
+/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png 590w,
+/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/526de/graphql.png 885w,
+/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fa2eb/graphql.png 1180w,
+/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png 1478w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;CSS&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/styled-components/styled-components&quot;&gt;Styled Component&lt;/a&gt; vizualizácia
+komponentov v javascripte pomocou CSS. Výhodou je napríklad vynutie sa class-name konfliktov.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Button &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; styled&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;a&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`
+  display: inline-block;
+  color: #e62076;
+`&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Button href&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;http://www.martinboksa.eu/&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;GitHub&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Button&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mui-org/material-ui&quot;&gt;Material UI&lt;/a&gt; React
+komponenty, ktoré implementujú &lt;a href=&quot;https://material-ui.com/&quot;&gt;Google Material dizajn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/JedWatson/classnames&quot;&gt;classnames&lt;/a&gt; zaradil som to do CSS, ale ide skôr
+o utilitu, ktorá pomáha vytvárať class-names pre komponenty. Je to jeden z mojích
+najobľúbenejších nástrojov. Podľa mňa výborne zprehľadní kód.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;classNames&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;foo&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; bar&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// =&gt; result class name: &apos;foo bar&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/contra/react-responsive&quot;&gt;react-responsive&lt;/a&gt; jednoduchý spôsob ako použiť
+media query v Reacte.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; MediaQuery &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react-responsive&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Example&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Device Test&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;MediaQuery query&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;(min-device-width: 1824px)&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;You have a huge screen&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;MediaQuery&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;MediaQuery query&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;(max-width: 1224px)&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;You are sized like a tablet or mobile phone though&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;MediaQuery&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/react-dnd/react-dnd&quot;&gt;React DnD&lt;/a&gt; knižnica k vytvoreniu
+Drag&amp;#x26;Drop rozhrania.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/react-spring/react-spring&quot;&gt;React Spring&lt;/a&gt; knižnica na animácie. Mám veľmi dobrú skúsenosť s výkonom
+aký je možný s ňou dosiahnúť. Odporúčam
+si pozrieť &lt;a href=&quot;https://blog.usejournal.com/why-react-needed-yet-another-animation-library-introducing-react-spring-8212e424c5ce&quot;&gt;&lt;em&gt;“Prečo React potrebuje ďalšiu knižnicu na animácie?”&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/portfolio/dragndrop-c409f1a43fcb00ed186997b56efe72ab.gif&quot; alt=&quot;React Spring - Drag&amp;#x26;Drop&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/react-bootstrap/react-bootstrap&quot;&gt;React Bootstrap&lt;/a&gt; komponenty
+na základe &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;Bootstrap 4&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Internationalization&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/yahoo/react-intl&quot;&gt;React Intl&lt;/a&gt; knižnica na preklady, ktorá okrem iného poskytuje
+formátovanie dátumov, čísiel, reťazcov, pluralizácie, …&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/i18next/react-i18next&quot;&gt;react-i18next&lt;/a&gt; internacionalizácie pre &lt;em&gt;reactjs&lt;/em&gt; / &lt;em&gt;reactnative&lt;/em&gt;, ktorý je založený na i18next.&lt;/p&gt;
+&lt;p&gt;V tejto časti by som sám rad zistil aké sú ďalšie spoľahlivé možnosti._&lt;/p&gt;
+&lt;h2&gt;Testing&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jestjs.io/en/&quot;&gt;Jest&lt;/a&gt; testovacia platforma s nulovou konfiguráciou. Používa ho tiež &lt;em&gt;Facebook&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/airbnb/enzyme&quot;&gt;Enzyme&lt;/a&gt; testovací nástroj od &lt;em&gt;Airbnb&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Meta Tags&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/gaearon/react-document-title&quot;&gt;React Document Title&lt;/a&gt; nastavenie &lt;code class=&quot;language-javascript&quot;&gt;title&lt;/code&gt; pomocout &lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;DocumentTitle&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;Awesome Title&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/nfl/react-helmet&quot;&gt;React Helmet&lt;/a&gt; nástroj na správu hlavičiek &lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Formuláre&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/erikras/redux-form&quot;&gt;Redux Form&lt;/a&gt; Higher Order Component, ktorá drží
+state v &lt;em&gt;reduxe&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Utils&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://lodash.com/docs/4.17.11&quot;&gt;lodash&lt;/a&gt; rozširuje javascript o veľa zaujímavých funkciíí ako &lt;em&gt;debounce&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://momentjs.com/&quot;&gt;Moment.js&lt;/a&gt; parsovanie, manipulácia a zobrazovanie dátumu a času 📅.&lt;/p&gt;
+&lt;h2&gt;Rich Editor&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/draft-js&quot;&gt;Draft.js&lt;/a&gt; framework s ktorým je možné
+vytvoriť &lt;em&gt;rich editor&lt;/em&gt;. 
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 563px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 40.14209591474245%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAv0lEQVQoz5WSWw6CMBBFu/9FKYKSqPzLL7AAwIZnW67eSUpqIhomOZ12oCeZSZVzDrNxsNbCGCOEezLPsxDWyDRNUqeDLMsCZayD7h2GYRD6vhf8vus6NE0DrTXGcRQJ4be2baXOoIxS5ZyFfrZykVBU17VknnmJ+VdQ5lG0fgvfBtsn/rzFKuTP9yzDJU1xOEaIkwRFUWJvrC1zuI88f4vOuF5viE4xyqr6aGWXcKvlcC57UFz8Mwnzv5ltzfEF3ctyimWDEIMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Rich Editor&quot;
+        title=&quot;&quot;
+        src=&quot;/portfolio/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png&quot;
+        srcset=&quot;/portfolio/static/1539cd7870523d529ad6c5901a8dad27/d8532/rich-editor.png 148w,
+/portfolio/static/1539cd7870523d529ad6c5901a8dad27/9bf66/rich-editor.png 295w,
+/portfolio/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png 563w&quot;
+        sizes=&quot;(max-width: 563px) 100vw, 563px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;h2&gt;Type Checking&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/prop-types&quot;&gt;PropTypes&lt;/a&gt; kontrola typu &lt;em&gt;props&lt;/em&gt; v runtime.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flow.org/en/docs/frameworks/react/&quot;&gt;flow&lt;/a&gt; statický typechecker.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt; jazyk, ktorý sa prekladá do javascriptu, ale je typový. Odporúčam.&lt;/p&gt;
+&lt;h2&gt;Nice to know&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/storybooks/storybook&quot;&gt;Storybook&lt;/a&gt; developerské rozrahnie pre UI komponenty. Vidíte ako vyzerajú vaše komponenty (za dôsledok sú podľa mňa komponenty, ktoré sa dajú lepšie znova použiť a testovať).
+&lt;img src=&quot;/portfolio/storybook-intro-5eb59c13f71816a543bf88170df88c36.gif&quot; alt=&quot;Storybook intro&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://prettier.io/&quot;&gt;Prettier&lt;/a&gt; jeden z mojích ďalších obľúbených nástrojov. Slúži ako formátovač kódu, snáď všetky známe editory ho integrujú. Stačí stlačiť klávesovú skratku a naformátuje dokument.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eslint.org/&quot;&gt;ESLint&lt;/a&gt; &lt;em&gt;The pluggable linting utility for JavaScript and JSX.&lt;/em&gt; Vo všetkých mojích projektoch som ho používal. Niekedy je otravný :).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://palantir.github.io/tslint/&quot;&gt;TSLint&lt;/a&gt; Ako ESLint ale pre TypeScript, na statickú analýzu kód.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.pixijs.com/&quot;&gt;PixiJS&lt;/a&gt; posledný rok som pracoval na grafickom editore v ktorom bol použitý PixiJS. Môžem plne odporučiť pri práci s grafikov.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt; pomáha vytvárať jednoducho stránky bez &lt;em&gt;“headache”&lt;/em&gt;. Je v ňom napísaný napríklad &lt;a href=&quot;https://reactjs.org/docs/getting-started.html&quot;&gt;React Docs&lt;/a&gt; alebo tento blog.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Knižníč a utilít na prácu s Reactom a javascriptom je naozaj veľa. Myslím, že toto je len zlomok zoznamu čo by vám mohlo byť užitočné.
+Ďalších veľa knižníc môžete pozrieť &lt;a href=&quot;https://github.com/brillout/awesome-react-components&quot;&gt;tu&lt;/a&gt;. &lt;/p&gt;</content:encoded></item></channel></rss>
