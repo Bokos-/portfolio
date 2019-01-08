@@ -22,6 +22,9 @@ Wordpress2016.overrideThemeStyles = () => ({
     backgroundColor: primaryColor,
     color: backgroundColor,
   },
+  'a.gatsby-resp-image-link:hover': {
+    backgroundColor: 'inherit'
+  },
   'a.gatsby-resp-image-link': {
     boxShadow: 'none',
   },

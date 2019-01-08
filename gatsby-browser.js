@@ -1,3 +1,2 @@
-require('prismjs/plugins/line-numbers/prism-line-numbers.css')
-
+import './src/utils/prism-line-number.css'
 import './src/utils/theme.css'

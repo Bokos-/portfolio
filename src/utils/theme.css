@@ -42,9 +42,13 @@ pre[class*='language-'] {
   hyphens: none;
 }
 
-code.language-text {
+p code.language-text {
   background-color: rgba(230, 32, 118, 0.8) !important;
   color: #ffffff !important;
+}
+
+p code[class*='language-'] {
+  font-size: 1rem !important;
 }
 
 pre[class*='language-']::-moz-selection,
@@ -64,7 +68,7 @@ code[class*='language-'] ::selection {
 /* Code blocks */
 pre[class*='language-'] {
   padding: 1em;
-  margin: 0.5em 0;
+  margin: 0.5em 0 1.75rem 0;
   overflow: auto;
   border-radius: 0.3em;
 }
