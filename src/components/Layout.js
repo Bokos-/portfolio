@@ -87,6 +87,9 @@ class Layout extends React.Component {
                 >
                   facebook
                 </a>
+                <a href="/rss.xml" style={{ float: 'right' }}>
+                  rss
+                </a>
               </footer>
             </div>
           )

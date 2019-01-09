@@ -3,7 +3,8 @@ module.exports = {
     title: `Martin Bokša Blog`,
     author: `Martin Bokša`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://martinboksa.eu/`,
+    siteUrl: `https://bokos-.github.io/portfolio/`,
+    gitUrl: `https://github.com/Bokos-/portfolio/`,
     social: {
       github: `Bokos-`,
       linkedIn: `martin-boksa`,
@@ -54,6 +55,7 @@ module.exports = {
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-autolink-headers`,
         ],
       },
     },
@@ -87,5 +89,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-remark-external-links`,
   ],
 }

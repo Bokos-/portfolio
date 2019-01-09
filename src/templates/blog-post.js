@@ -9,9 +9,16 @@ import { formatReadingTime } from '../utils/helpers'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    console.log(this.props)
+    const {
+      pageContext: { previous, next, slug },
+      data: {
+        site: {
+          siteMetadata: { title: siteTitle, gitUrl },
+        },
+        markdownRemark: post,
+      },
+    } = this.props
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -28,11 +35,17 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date} • {formatReadingTime(post.timeToRead)}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
+
+        <a
+          href={`${gitUrl}tree/master/content/blog${slug}index.md`}
           style={{
+            display: 'inline-block',
             marginBottom: rhythm(1),
           }}
-        />
+        >
+          Edit this page
+        </a>
+
         <Bio />
 
         <ul
@@ -72,6 +85,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        gitUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
