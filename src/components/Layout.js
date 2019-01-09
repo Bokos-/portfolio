@@ -87,9 +87,9 @@ class Layout extends React.Component {
                 >
                   facebook
                 </a>
-                <a href="/rss.xml" style={{ float: 'right' }}>
+                <Link to="rss.xml" style={{ float: 'right' }}>
                   rss
-                </a>
+                </Link>
               </footer>
             </div>
           )
@@ -105,6 +105,7 @@ const layoutQuery = graphql`
   query LayoutQuery {
     site {
       siteMetadata {
+        siteUrl
         social {
           linkedIn
           github
