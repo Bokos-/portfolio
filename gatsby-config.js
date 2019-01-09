@@ -3,10 +3,10 @@ module.exports = {
     title: `Martin Bokša Blog`,
     author: `Martin Bokša`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://bokos-.github.io/portfolio/`,
-    gitUrl: `https://github.com/Bokos-/portfolio/`,
+    siteUrl: `https://martinboksa.github.io/portfolio/`,
+    gitUrl: `https://github.com/martinboksa/portfolio/`,
     social: {
-      github: `Bokos-`,
+      github: `martinboksa`,
       linkedIn: `martin-boksa`,
       facebook: `boksamartin`,
     },

@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Martin Bokša <martin.boksa@gmail.com>",
   "bugs": {
-    "url": "https://github.com/Bokos-/portfolio/issues"
+    "url": "https://github.com/martinboksa/portfolio/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.76",
