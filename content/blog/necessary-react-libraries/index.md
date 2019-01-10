@@ -1,5 +1,5 @@
 ---
-title: Draft - Necessary React libraries and skills!
+title: Necessary React libraries and skills!
 date: '2019-01-06T23:03:00'
 ---
 
@@ -8,7 +8,8 @@ Je to dané najmä tým, že som nemal veľké predchádzajúce skúsenosti s Re
 a zároveň javascript je tak rýchly jazyk, že vychádzá v ňom každý deň
 nové množstvo knižníc.
 Rád by som si tu odložil doterajšie skúsenosti a priblížil vám čo všetko považujem
-dnes za nevynutné vedieť pri práci s Reactom.
+dnes za nevynutné vedieť pri práci s Reactom. Knižnice môžu pomôcť hlavne tým, ktorí
+s ním začínajú.
 
 ## Boilerplate (Kostra)
 
@@ -26,7 +27,8 @@ What's included? React, JSX, ES6, TypeScript and Flow syntax support.
 [Redux](https://github.com/reduxjs/react-redux) ide o globálny obchod s premennými. Je vhodný k tomu,
 aby ste nemuseli preposielať premennú cez ďalších _x_ komponent do hĺbky. Tak ju
 napojíte na globálne obchod. Použitie napríklad: user data, aktuálna téma, stav aplikácie, ...
-Používa sa často. Odporúčam si doinštalovať [plugin](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) do chrome.
+Používa sa často. Odporúčam si doinštalovať na vývijanie [plugin](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) do chrome.
+Ak sa chcete vyhnúť boilerplate, ktorý je spojený s Reduxom, odporúčam [rematch](https://github.com/rematch/rematch).
 
 ![Redux](./redux.png)
 
@@ -128,7 +130,7 @@ formátovanie dátumov, čísiel, reťazcov, pluralizácie, ...
 
 [react-i18next](https://github.com/i18next/react-i18next) internacionalizácie pre _reactjs_ / _reactnative_, ktorý je založený na i18next.
 
-V tejto časti by som sám rad zistil aké sú ďalšie spoľahlivé možnosti._
+V tejto časti by som sám rad zistil aké sú ďalšie spoľahlivé možnosti.\_
 
 ## Testing
 
@@ -183,5 +185,5 @@ vytvoriť _rich editor_. ![Rich Editor](./rich-editor.png)
 
 ---
 
-Knižníč a utilít na prácu s Reactom a javascriptom je naozaj veľa. Myslím, že toto je len zlomok zoznamu čo by vám mohlo byť užitočné. 
-Ďalších veľa knižníc môžete pozrieť [tu](https://github.com/brillout/awesome-react-components). 
+Knižníč a utilít na prácu s Reactom a javascriptom je naozaj veľa. Myslím, že toto je len zlomok zoznamu čo by vám mohlo byť užitočné.
+Ďalších veľa knižníc môžete pozrieť [tu](https://github.com/brillout/awesome-react-components).
