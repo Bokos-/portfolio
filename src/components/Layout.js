@@ -53,7 +53,7 @@ class Layout extends React.Component {
       <StaticQuery
         query={layoutQuery}
         render={data => {
-          const { social } = data.site.siteMetadata
+          const { social, siteUrl } = data.site.siteMetadata
           return (
             <div
               style={{
@@ -87,9 +87,9 @@ class Layout extends React.Component {
                 >
                   facebook
                 </a>
-                <Link to="rss.xml" style={{ float: 'right' }}>
+                <a href={`${rootPath}rss.xml`} style={{ float: 'right' }}>
                   rss
-                </Link>
+                </a>
               </footer>
             </div>
           )
