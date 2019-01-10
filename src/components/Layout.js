@@ -53,7 +53,7 @@ class Layout extends React.Component {
       <StaticQuery
         query={layoutQuery}
         render={data => {
-          const { social, siteUrl } = data.site.siteMetadata
+          const { social } = data.site.siteMetadata
           return (
             <div
               style={{
@@ -109,7 +109,6 @@ const layoutQuery = graphql`
   query LayoutQuery {
     site {
       siteMetadata {
-        siteUrl
         social {
           linkedIn
           github

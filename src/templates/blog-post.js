@@ -9,16 +9,19 @@ import { formatReadingTime } from '../utils/helpers'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    console.log(this.props)
     const {
       pageContext: { previous, next, slug },
       data: {
         site: {
-          siteMetadata: { title: siteTitle, gitUrl },
+          siteMetadata: { title: siteTitle, gitUrl, siteUrl },
         },
         markdownRemark: post,
       },
     } = this.props
+
+    const discussUrl = `https://twitter.com/search?q=${
+      new URL(slug, siteUrl).href
+    }`
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -36,15 +39,24 @@ class BlogPostTemplate extends React.Component {
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <a
-          href={`${gitUrl}tree/master/content/blog${slug}index.md`}
+        <p
           style={{
             display: 'inline-block',
             marginBottom: rhythm(1),
           }}
         >
-          Edit this page
-        </a>
+          <a href={discussUrl} target="_blank" rel="noopener noreferrer">
+            Discuss on Twitter
+          </a>
+          {` • `}
+
+          <a
+            href={`${gitUrl}tree/master/content/blog${slug}index.md`}
+            rel="noopener noreferrer"
+          >
+            Edit this page
+          </a>
+        </p>
 
         <Bio />
 
@@ -86,6 +98,7 @@ export const pageQuery = graphql`
         title
         author
         gitUrl
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
