@@ -205,7 +205,7 @@ vytvoriť _rich editor_. ![Rich Editor](./rich-editor.png)
 
 ## Nice to know
 
-[Storybook](https://github.com/storybooks/storybook) developerské rozrahnie pre UI komponenty. Vidíte ako vyzerajú vaše komponenty (za dôsledok sú podľa mňa komponenty, ktoré sa dajú lepšie znova použiť a testovať).
+[Storybook](https://github.com/storybooks/storybook) developerské rozrahnie pre UI komponenty. Vidíte ako vyzerajú vaše komponenty (za dôsledok sú podľa mňa komponenty, ktoré sa dajú lepšie znova použiť a testovať). Pekný príklad použitia s [Twitterom](https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybook%2Factions%2Factions-panel).
 ![Storybook intro](./storybook-intro.gif)
 
 [Prettier](https://prettier.io/) jeden z mojích ďalších obľúbených nástrojov. Slúži ako formátovač kódu, snáď všetky známe editory ho integrujú. Stačí stlačiť klávesovú skratku a naformátuje dokument.
