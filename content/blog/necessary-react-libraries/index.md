@@ -4,31 +4,39 @@ date: '2019-01-06T23:03:00'
 ---
 
 Za posledný môj rok som sa stretol s množstvom knižníc, ktoré sa týkajú Reactu.
-Je to dané najmä tým, že som nemal veľké predchádzajúce skúsenosti s Reactom
+Je to dané najmä tým, že som nemal veľké predchádzajúce skúsenosti s ním
 a zároveň javascript je tak rýchly jazyk, že vychádzá v ňom každý deň
 nové množstvo knižníc.
 Rád by som si tu odložil doterajšie skúsenosti a priblížil vám čo všetko považujem
-dnes za nevynutné vedieť pri práci s Reactom. Knižnice môžu pomôcť hlavne tým, ktorí
-s ním začínajú.
+dnes za nevyhnutné vedieť pri práci s Reactom. Knižnice môžu pomôcť hlavne tým, ktorí
+s ním začínajú. Začiatok som absolvoval s oficálnym [tutoriálom](https://reactjs.org/tutorial/tutorial.html). Keď
+človek si uchopí základné pojmy a zistí ako približne [štruktúrovať React projekt](https://reactjs.org/docs/faq-structure.html), potrebuje dostať nejaký background k aktuálnym populárnym knižniciam.
+Tu je zoznam knižníc, ktoré považujem za dôležité.
 
-## Boilerplate (Kostra)
+> Don’t overthink it.
+>  If you’re just starting a project, don’t spend more than five minutes on choosing a file structure.
+>
+> <cite>React</cite>
+
+## Boilerplate
 
 [create-react-app](https://github.com/facebook/create-react-app)
-ak nemáte skúsenosti s Reactom, táto knižnica vám vytvorí boilerplate (kostru) pre vašu
+ak nemáte skúsenosti s Reactom, táto knižnica vám vytvorí boilerplate (kostra projektu) pre vašu
 aplikáciu. Obsahuje všetky nevyhnuté konfigurácie a závislosti aby ste mohli
-rovno písať React a nemuseli sa o nič starať.
+rovno písať React a nemuseli sa o nič starať. Na začiatku veľa súvislostí ešte nemusíte vedieť a tento tool sa postará o to.
+
 
 ```no-text
 What's included? React, JSX, ES6, TypeScript and Flow syntax support.
 ```
 
-## Data Store
+## State Container
 
-[Redux](https://github.com/reduxjs/react-redux) ide o globálny obchod s premennými. Je vhodný k tomu,
+[Redux](https://github.com/reduxjs/react-redux) ide o *globálny obchod s premennými*. Je vhodný k tomu,
 aby ste nemuseli preposielať premennú cez ďalších _x_ komponent do hĺbky. Tak ju
 napojíte na globálne obchod. Použitie napríklad: user data, aktuálna téma, stav aplikácie, ...
 Používa sa často. Odporúčam si doinštalovať na vývijanie [plugin](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) do chrome.
-Ak sa chcete vyhnúť boilerplate, ktorý je spojený s Reduxom, odporúčam [rematch](https://github.com/rematch/rematch).
+Ak sa chcete vyhnúť boilerplate (bez akcií, switchov, ...), ktorý je spojený s Reduxom, odporúčam [rematch](https://github.com/rematch/rematch).
 
 ![Redux](./redux.png)
 
@@ -145,9 +153,9 @@ formátovanie dátumov, čísiel, reťazcov, pluralizácie, ...
 
 [react-i18next](https://github.com/i18next/react-i18next) internacionalizácie pre _reactjs_ / _reactnative_, ktorý je založený na i18next.
 
-[React Intl Redux](https://github.com/ratson/react-intl-redux) preklady sa držia v redux store. Nikdy som ho nepoužil, ale kolegovia áno.
+[React Intl Redux](https://github.com/ratson/react-intl-redux) preklady sa držia v redux store.
 
-[FBT](https://facebookincubator.github.io/fbt/) framework, ktorý používa Facebok.
+[FBT](https://facebookincubator.github.io/fbt/) framework na preklad, ktorý používa Facebok.
 
 _V tejto časti som písal hlavne zo skúsenosti kolegov._
 
@@ -165,7 +173,7 @@ _V tejto časti som písal hlavne zo skúsenosti kolegov._
 
 ## Formuláre
 
-[Redux Form](https://github.com/erikras/redux-form) Higher Order Component, ktorá drží state v _reduxe_.
+[Redux Form](https://github.com/erikras/redux-form) Drží formuláre v state containery. Treba poznať [HOC](https://reactjs.org/docs/higher-order-components.html) a [Redux](https://github.com/reduxjs/react-redux).
 
 [Formik](https://jaredpalmer.com/formik) kompletné riešenie pre formuláre, vrátane validácie, ... Jedno z najpopúlarnejších riešení, ktoré radí aj [Facebook](https://reactjs.org/docs/forms.html#fully-fledged-solutions).
 
@@ -174,7 +182,13 @@ _V tejto časti som písal hlavne zo skúsenosti kolegov._
 [lodash](https://lodash.com/docs/4.17.11) rozširuje javascript o veľa zaujímavých funkciíí ako _debounce_.
 
 [Moment.js](https://momentjs.com/) parsovanie, manipulácia a zobrazovanie dátumu a času 📅. Existuje ďalších veľa možností na prácu s dátumom.
-Myslím si, že táto možnosť nie je až tak dobrá, ale pozná ju ve....... dopiSAT
+Myslím si, že nie je to úplne dobrá utilita. Ale je populárna a známa vo svete javascriptu.
+
+[date-fns](https://date-fns.org/) namiesto momentjs môžete použiť túto knižnicu.
+
+> Good library if you’re looking to replace Moment.js for one reason or another. Immutable too.
+>
+> <cite>[Dan Abramov](https://twitter.com/dan_abramov/status/805030922785525760?lang=en)</cite>
 
 ## Rich Editor
 
@@ -187,7 +201,7 @@ vytvoriť _rich editor_. ![Rich Editor](./rich-editor.png)
 
 [flow](https://flow.org/en/docs/frameworks/react/) statický typechecker.
 
-[TypeScript](https://www.typescriptlang.org/) jazyk, ktorý sa prekladá do javascriptu, ale je typový. Odporúčam.
+[TypeScript](https://www.typescriptlang.org/) jazyk, ktorý sa prekladá do javascriptu, ale je typový. Odporúčam si ho pozrieť.
 
 ## Nice to know
 
@@ -210,5 +224,8 @@ vytvoriť _rich editor_. ![Rich Editor](./rich-editor.png)
 
 Knižníč a utilít na prácu s Reactom a javascriptom je naozaj veľa. Myslím, že toto je len zlomok zoznamu čo by vám mohlo byť užitočné.
 Ďalších veľa knižníc môžete pozrieť [tu](https://github.com/brillout/awesome-react-components). Knižnice, ktoré si vyberiete sú na vás. Záleží veľmi od toho
-čo chcete docieliť, ale ja som zástanca toho aby sme nevymýšľali druhý krát koleso. Všetky knižnice sú opensource a prípadne prerobenie ich, nemusí byť tak náročné. 
+čo chcete docieliť, ale ja som zástanca toho aby sme nevymýšľali druhý krát koleso. Všetky knižnice sú opensource a prípadne prerobenie ich, nemusí byť tak náročné.
+
+Keď som písal blog, premýšľal som o tom, komu tento článok smerovať. Rozhodol som sa nakoniec pre ľudí, ktorí nemajú veľkú skúsenosť s Reactom. Dôsledkom toho som sa rozhodol nepopisovať nástroje ako _webpack_, _parcel_, _grunt_, ... Myslím, že to sú veci, ktoré na začiatku nie sú treba.
+
 
