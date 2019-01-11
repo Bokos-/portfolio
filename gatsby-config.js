@@ -8,7 +8,6 @@ module.exports = {
     social: {
       github: `martinboksa`,
       linkedIn: `martin-boksa`,
-      facebook: `boksamartin`,
     },
   },
   pathPrefix: '/portfolio',

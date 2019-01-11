@@ -96,14 +96,8 @@ class Layout extends React.Component {
                   >
                     linked in
                   </a>
-                  |{' '}
-                  <a
-                    href={`https://www.facebook.com/${social.facebook}/`}
-                    target="_blank"
-                  >
-                    facebook
-                  </a>
-                  <span style={{ float: 'right', display: 'inline-block' }}>
+                  <span id="footer-right-info">
+                    {' '}
                     <Link to="/sk">sk</Link> | <Link to="/">en</Link> |{' '}
                     <a href={`${__PATH_PREFIX__}/rss.xml`} target="_blank">
                       rss
@@ -128,7 +122,6 @@ const layoutQuery = graphql`
         social {
           linkedIn
           github
-          facebook
         }
       }
     }
