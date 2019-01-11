@@ -1,11 +1,12 @@
 ---
 title: Necessary React libraries and skills!
-date: '2019-01-06T23:03:00'
+date: '2019-01-06T12:00:00'
+language: sk
 ---
 
 Za posledný rok som sa stretol s množstvom knižníc, ktoré sa týkajú Reactu.
 Je to dané najmä tým, že som nemal veľké predchádzajúce skúsenosti s ním
-a zároveň javascript je tak rýchly jazyk, že v ňom vychádzá každý deň
+a zároveň javascript je tak rýchly jazyk, že v ňom vychádza každý deň
 nové množstvo knižníc.
 Rád by som si tu odložil doterajšie skúsenosti a priblížil vám čo všetko považujem
 dnes za nevyhnutné vedieť pri práci s Reactom. Knižnice môžu pomôcť hlavne tým, ktorí
@@ -14,17 +15,16 @@ si človek uchopí základné pojmy a zistí ako približne [štruktúrovať Rea
 Tu je zoznam knižníc, ktoré považujem za dôležité.
 
 > Don’t overthink it.
->  If you’re just starting a project, don’t spend more than five minutes on choosing a file structure.
+> If you’re just starting a project, don’t spend more than five minutes on choosing a file structure.
 >
 > <cite>React</cite>
 
 ## Boilerplate
 
-[create-react-app](https://github.com/facebook/create-react-app) - 
+[create-react-app](https://github.com/facebook/create-react-app) -
 ak nemáte skúsenosti s Reactom, táto knižnica vám vytvorí boilerplate (kostra projektu) pre vašu
-aplikáciu. Obsahuje všetky nevyhnuté konfigurácie a závislosti aby ste mohli
+aplikáciu. Obsahuje všetky nevyhnutné konfigurácie a závislosti, aby ste mohli
 rovno písať React a nemuseli sa o nič starať. Na začiatku veľa súvislostí ešte nemusíte vedieť a tento tool sa postará o to.
-
 
 ```no-text
 What's included? React, JSX, ES6, TypeScript and Flow syntax support.
@@ -32,23 +32,23 @@ What's included? React, JSX, ES6, TypeScript and Flow syntax support.
 
 ## State Container
 
-[Redux](https://github.com/reduxjs/react-redux) - ide o *globálny obchod s premennými*. Je vhodný k tomu,
+[Redux](https://github.com/reduxjs/react-redux) - ide o _globálny obchod s premennými_. Je vhodný k tomu,
 aby ste nemuseli preposielať premennú cez ďalších _x_ komponent do hĺbky. Tak ju
-napojíte na globálne obchod. Použitie napríklad: user data, aktuálna téma, stav aplikácie, ...
-Používa sa často. Odporúčam si doinštalovať na vývijanie [plugin](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) do chrome.
+napojíte na globálny obchod. Použitie napríklad: user data, aktuálna téma, stav aplikácie, ...
+Používa sa často. Odporúčam si doinštalovať na vyvíjanie [plugin](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) do chrome.
 Ak sa chcete vyhnúť boilerplate (bez akcií, switchov, ...), ktorý je spojený s Reduxom, odporúčam [rematch](https://github.com/rematch/rematch).
 
 ![Redux](./redux.png)
 
 [React Context](https://reactjs.org/docs/context.html) - je to pomerne nová feature od Reactu.
-Je teoretickým nahraditeľom Reduxu. Tu sa, ale vytvorí `provider` dát a
-jeho vnútorné komponenty vo vnútri ich vedia čitať pomocou `consumera`.
+Je teoretickým nahraditeľom Reduxu. Tu sa ale vytvorí `provider` dát a
+jeho vnútorné komponenty vo vnútri ich vedia čítať pomocou `consumera`.
 
 ![React Context](./react-context.png)
 
 [MobX](https://github.com/mobxjs/mobx) - ďalšia možnosť stavového kontajneru.
 
-## Uložisko
+## Úložisko
 
 [store.js](https://github.com/marcuswestin/store.js/) - pomáha pri aplikáciách založených na local storage. Staršie iPhone telefóny ho nepodporujú 😅.
 
@@ -80,8 +80,8 @@ axios
 
 [Apollo Client](https://github.com/apollographql/apollo-client) - knižnica s plnou podporou
 pre [GraphQL](https://graphql.org/). Ponúka tiež [dev tools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm) pre Chrome.
-Odporúčam si to pozrieť. **GraphQL** v skratke: Viacero dopytov je možné zlúčiť do jedného.
-Alebo namiesto reťazových volaní na server, je možné ich nahradiť za jeden.
+Odporúčam si to pozrieť. **GraphQL** v skratke: Viacero dopytov je možné zlúčiť do jedného,
+alebo namiesto reťazových volaní na server, je možné ich nahradiť za jeden.
 
 ![GraphQL](./graphql.png)
 
@@ -109,7 +109,7 @@ najobľúbenejších nástrojov. Podľa mňa výborne zprehľadní kód.
 classNames('foo', { bar: true }) // => result class name: 'foo bar'
 ```
 
-[react-responsive](https://github.com/contra/react-responsive) - jednoduchý spôsob ako použiť
+[react-responsive](https://github.com/contra/react-responsive) - jednoduchý spôsob, ako použiť
 media query v Reacte a vytvoriť tak responzívny web.
 
 ```javascript{numberLines: true}
@@ -133,11 +133,11 @@ Drag&Drop rozhrania.
 [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) - v práci chalani majú výbornú skúsenosť s týmto _DnD_.
 
 > má to super performance
-> a majú dosť veľa examples čo spĺnia väčšinu základných veci.
+> a majú dosť veľa examples, čo pokryje väčšinu základných vecí.
 >
 > <cite>Denis Slávik</cite>
 
-[React Spring](https://github.com/react-spring/react-spring) - knižnica na animácie. Mám veľmi dobrú skúsenosť s výkonom
+[React Spring](https://github.com/react-spring/react-spring) - knižnica na animácie. Mám veľmi dobrú skúsenosť s výkonom,
 aký je možný s ňou dosiahnúť. Odporúčam
 si pozrieť [_"Prečo React potrebuje ďalšiu knižnicu na animácie?"_](https://blog.usejournal.com/why-react-needed-yet-another-animation-library-introducing-react-spring-8212e424c5ce).
 
@@ -155,7 +155,7 @@ formátovanie dátumov, čísiel, reťazcov, pluralizácie, ...
 
 [React Intl Redux](https://github.com/ratson/react-intl-redux) - preklady sa držia v redux store.
 
-[FBT](https://facebookincubator.github.io/fbt/) - framework na preklad, ktorý používa Facebok.
+[FBT](https://facebookincubator.github.io/fbt/) - framework na preklad, ktorý používa Facebook.
 
 _V tejto časti som písal hlavne zo skúsenosti kolegov._
 
@@ -175,11 +175,11 @@ _V tejto časti som písal hlavne zo skúsenosti kolegov._
 
 [Redux Form](https://github.com/erikras/redux-form) - Drží formuláre v state containery. Treba poznať [HOC](https://reactjs.org/docs/higher-order-components.html) a [Redux](https://github.com/reduxjs/react-redux).
 
-[Formik](https://jaredpalmer.com/formik) - kompletné riešenie pre formuláre, vrátane validácie, ... Jedno z najpopúlarnejších riešení, ktoré poradil aj [Facebook](https://reactjs.org/docs/forms.html#fully-fledged-solutions).
+[Formik](https://jaredpalmer.com/formik) - kompletné riešenie pre formuláre, vrátane validácie, ... Jedno z najpopúlárnejších riešení, ktoré poradil aj [Facebook](https://reactjs.org/docs/forms.html#fully-fledged-solutions).
 
 ## Utility
 
-[lodash](https://lodash.com/docs/4.17.11) - rozširuje javascript o veľa zaujímavých funkciíí ako _debounce_.
+[lodash](https://lodash.com/docs/4.17.11) - rozširuje javascript o veľa zaujímavých funkcií ako _debounce_.
 
 [Moment.js](https://momentjs.com/) - parsovanie, manipulácia a zobrazovanie dátumu a času 📅. Existuje ďalších veľa možností na prácu s dátumom.
 Myslím si, že nie je to úplne dobrá utilita. Ale je populárna a známa vo svete javascriptu.
@@ -205,26 +205,25 @@ vytvoriť _rich editor_. ![Rich Editor](./rich-editor.png)
 
 ## Nice to know
 
-[Storybook](https://github.com/storybooks/storybook) - developerské rozrahnie pre UI komponenty. Vidíte ako vyzerajú vaše komponenty (za dôsledok sú podľa mňa komponenty, ktoré sa dajú lepšie znova použiť a testovať). Pekný príklad použitia s [Twitterom](https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybook%2Factions%2Factions-panel).
+[Storybook](https://github.com/storybooks/storybook) - developerské rozrahnie pre UI komponenty. Vidíte, ako vyzerajú vaše komponenty (za dôsledok sú podľa mňa komponenty, ktoré sa dajú lepšie znova použiť a testovať). Pekný príklad použitia s [Twitterom](https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybook%2Factions%2Factions-panel).
 ![Storybook intro](./storybook-intro.gif)
 
 [Prettier](https://prettier.io/) - jeden z mojích ďalších obľúbených nástrojov. Slúži ako formátovač kódu, snáď všetky známe editory ho integrujú. Stačí stlačiť klávesovú skratku a naformátuje dokument.
 
-[ESLint](https://eslint.org/) - _The pluggable linting utility for JavaScript and JSX._ Vo všetkých mojích projektoch som ho používal. Niekedy je otravný :).
+[ESLint](https://eslint.org/) - _The pluggable linting utility for JavaScript and JSX._ Vo všetkých mojich projektoch som ho používal. Niekedy je otravný :).
 
 [TSLint](https://palantir.github.io/tslint/) - Ako ESLint ale pre TypeScript, na statickú analýzu kód.
 
-[PixiJS](http://www.pixijs.com/) - posledný rok som pracoval na grafickom editore v ktorom bol použitý PixiJS. Môžem plne odporučiť pri práci s plátnom (canvasom).
+[PixiJS](http://www.pixijs.com/) - posledný rok som pracoval na grafickom editore, v ktorom bol použitý PixiJS. Môžem plne odporučiť pri práci s plátnom (canvasom).
 
 [Gatsby](https://www.gatsbyjs.org/) - pomáha vytvárať jednoducho stránky bez _"headache"_. Je v ňom napísaný napríklad [React Docs](https://reactjs.org/docs/getting-started.html) alebo tento blog.
 
-[SENTRY](https://sentry.io/welcome/) - tool ktorý som používal na zachytávanie chýb v produkcii. Môžem odporučiť, výborne sa dá skombinovať s Reactom, najmä ešte keď pridali [Error Boundaries](https://reactjs.org/docs/error-boundaries.html) v metóde `javascript÷componentDidCatch()`.
+[SENTRY](https://sentry.io/welcome/) - tool, ktorý som používal na zachytávanie chýb v produkcii. Môžem odporučiť, výborne sa dá skombinovať s Reactom, najmä ešte keď pridali [Error Boundaries](https://reactjs.org/docs/error-boundaries.html) v metóde `javascript÷componentDidCatch()`.
 
 ---
 
-Knižníč a utilít na prácu s Reactom a javascriptom je naozaj veľa. Myslím, že toto je len zlomok zoznamu čo by vám mohlo byť užitočné.
-Ďalších veľa knižníc môžete pozrieť [tu](https://github.com/brillout/awesome-react-components). Knižnice, ktoré si vyberiete sú na vás. Záleží veľmi od toho
-čo chcete docieliť, ale ja som zástanca toho aby sme nevymýšľali druhý krát koleso. Všetky knižnice sú *opensource* a prípadne prerobenie ich, nemusí byť tak náročné.
+Knižníc a utilít na prácu s Reactom a javascriptom je naozaj veľa. Myslím, že toto je len zlomok zoznamu, ktorý by vám mohol byť užitočný.
+Ďalších veľa knižníc môžete pozrieť [tu](https://github.com/brillout/awesome-react-components). Knižnice, ktoré si vyberiete sú na vás. Záleží veľmi od toho,
+čo chcete docieliť, ale ja som zástanca toho, aby sme nevymýšľali druhýkrát koleso. Všetky knižnice sú _opensource_ a prípadne prerobenie ich, nemusí byť tak náročné.
 
-Keď som písal blog, premýšľal som o tom, komu tento článok smerovať. Rozhodol som sa nakoniec pre ľudí, ktorí nemajú veľkú skúsenosť s Reactom. Dôsledkom toho som sa rozhodol nepopisovať nástroje ako _webpack_, _parcel_, _grunt_, ... Myslím, že to sú veci, ktoré na začiatku nie sú treba.
-
+Keď som písal blog, premýšľal som o tom, komu tento článok smerovať. Rozhodol som sa nakoniec pre ľudí, ktorí nemajú veľkú skúsenosť s Reactom. Dôsledkom toho som sa rozhodol nepopisovať nástroje ako _webpack_, _parcel_, _grunt_, ... Myslím, že to sú veci, ktoré na začiatku nie sú potrebné.

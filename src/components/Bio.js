@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
 import { rhythm } from '../utils/typography'
+import { FormattedMessage } from 'react-intl'
 
 function Bio() {
   return (
@@ -11,12 +12,7 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
-          >
+          <div style={{ display: `flex`, marginBottom: rhythm(2.5) }}>
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -28,15 +24,24 @@ function Bio() {
               }}
             />
             <p>
-              Personal blog by{' '}
-              <a
-                href={`https://www.linkedin.com/in/${social.linkedIn}/`}
-                target="_blank"
-              >
-                {author}
-              </a>{' '}
+              <FormattedMessage
+                id="about.me"
+                defaultMessage="Personal blog by
+              {author}
               who is technology enthusiast, lives in Brno and work primary in
-              React 🍻.
+              React {emoji}."
+                values={{
+                  author: (
+                    <a
+                      href={`https://www.linkedin.com/in/${social.linkedIn}/`}
+                      target="_blank"
+                    >
+                      {author}
+                    </a>
+                  ),
+                  emoji: '🍻',
+                }}
+              />
             </p>
           </div>
         )

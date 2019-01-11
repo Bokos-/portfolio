@@ -2,15 +2,16 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Bio from '../components/Bio'
-import Layout from '../components/Layout'
+import Layout from '../layouts/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
-import { formatReadingTime } from '../utils/helpers'
+import { FormattedMessage } from 'react-intl'
+import { ReadTime } from '../components/ReadTime'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const {
-      pageContext: { previous, next, slug },
+      pageContext: { previous, next, slug, language },
       data: {
         site: {
           siteMetadata: { title: siteTitle, gitUrl, siteUrl },
@@ -20,11 +21,15 @@ class BlogPostTemplate extends React.Component {
     } = this.props
 
     const discussUrl = `https://twitter.com/search?q=${
-      new URL(slug, siteUrl).href
+      new URL(post.fields.twitterSlug, siteUrl).href
     }`
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout
+        location={this.props.location}
+        title={siteTitle}
+        language={language}
+      >
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -35,7 +40,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date} • {formatReadingTime(post.timeToRead)}
+          {post.frontmatter.date} • <ReadTime minutes={post.timeToRead} />
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
@@ -46,7 +51,10 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <a href={discussUrl} target="_blank" rel="noopener noreferrer">
-            Discuss on Twitter
+            <FormattedMessage
+              id="discuss.twitter"
+              defaultMessage="Discuss on Twitter"
+            />
           </a>
           {` • `}
 
@@ -54,7 +62,7 @@ class BlogPostTemplate extends React.Component {
             href={`${gitUrl}tree/master/content/blog${slug}index.md`}
             rel="noopener noreferrer"
           >
-            Edit this page
+            <FormattedMessage id="edit.page" defaultMessage="Edit this page" />
           </a>
         </p>
 
@@ -105,6 +113,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        twitterSlug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
