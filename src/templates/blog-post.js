@@ -27,6 +27,23 @@ class BlogPostTemplate extends React.Component {
       new URL(post.fields.tag, siteUrl).href
     }`
 
+    const availableLanguages = post.fields.availableLanguages.map(
+      ({ slug, language }, index) => (
+        <span key={slug}>
+          <Link to={slug}>{language}</Link>
+          {post.fields.availableLanguages.length - 1 !== index && ', '}
+        </span>
+      )
+    )
+
+    console.log(availableLanguages.length)
+    const readIn = availableLanguages.length ? (
+      <React.Fragment>
+        • <FormattedMessage id="read.in" defaultMessage={'Read in'} />{' '}
+        {availableLanguages}
+      </React.Fragment>
+    ) : null
+
     return (
       <Layout
         location={this.props.location}
@@ -43,7 +60,8 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date} • <ReadTime minutes={post.timeToRead} />
+          {post.frontmatter.date} • <ReadTime minutes={post.timeToRead} />{' '}
+          {readIn}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
@@ -119,6 +137,10 @@ export const pageQuery = graphql`
       html
       fields {
         tag
+        availableLanguages {
+          slug
+          language
+        }
       }
       frontmatter {
         title
