@@ -1,5 +1,5 @@
 ---
-title: Necessary React libraries and skills!
+title: Čo považujem za nevyhnutné pri Reacte?
 date: '2019-01-06T12:00:00'
 language: sk
 ---
