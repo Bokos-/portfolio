@@ -11,7 +11,7 @@ import { ReadTime } from '../components/ReadTime'
 class BlogPostTemplate extends React.Component {
   render() {
     const {
-      pageContext: { previous, next, slug, language },
+      pageContext: { previous, next, language },
       data: {
         site: {
           siteMetadata: { title: siteTitle, gitUrl, siteUrl },
@@ -19,6 +19,9 @@ class BlogPostTemplate extends React.Component {
         markdownRemark: post,
       },
     } = this.props
+
+    const filename =
+      post.fileAbsolutePath && post.fileAbsolutePath.split('/').pop()
 
     const discussUrl = `https://twitter.com/search?q=${
       new URL(post.fields.tag, siteUrl).href
@@ -59,7 +62,9 @@ class BlogPostTemplate extends React.Component {
           {` • `}
 
           <a
-            href={`${gitUrl}tree/master/content/blog${slug}index.md`}
+            href={`${gitUrl}tree/master/content/blog${
+              post.fields.tag
+            }/${filename}`}
             rel="noopener noreferrer"
           >
             <FormattedMessage id="edit.page" defaultMessage="Edit this page" />
@@ -110,8 +115,7 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
+      fileAbsolutePath
       html
       fields {
         tag
