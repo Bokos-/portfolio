@@ -87,7 +87,7 @@ alebo namiesto reťazových volaní na server, je možné ich nahradiť za jeden
 
 ## CSS
 
-[Styled Component](https://github.com/styled-components/styled-components) - vizualizácia
+[Styled Components](https://github.com/styled-components/styled-components) - vizualizácia
 komponentov v javascripte pomocou CSS. Výhodou je napríklad vyhnutie sa class-name konfliktov.
 
 ```javascript{numberLines: true}
@@ -98,8 +98,8 @@ const Button = styled.a`
 render(<Button href="http://www.martinboksa.eu/">GitHub</Button>)
 ```
 
-[Material UI](https://github.com/mui-org/material-ui) - React
-komponenty, ktoré implementujú [Google Material dizajn](https://material-ui.com/).
+[CSS-in-JS](https://cssinjs.org/) - podobná knižnica ako *Styled Components*, používajú ju u nás v praci.
+
 
 [classnames](https://github.com/JedWatson/classnames) - zaradil som to do CSS, ale ide skôr
 o utilitu, ktorá pomáha vytvárať class-names pre komponenty. Je to jeden z mojích
@@ -143,8 +143,15 @@ si pozrieť [_"Prečo React potrebuje ďalšiu knižnicu na animácie?"_](https:
 
 ![React Spring - Drag&Drop](./dragndrop.gif)
 
-[React Bootstrap](https://github.com/react-bootstrap/react-bootstrap) - komponenty
-na základe [Bootstrap 4](https://getbootstrap.com/).
+
+[Semantic UI](https://semantic-ui.com/) - UI framework, ktorým vytvoríte responzívny web. Obsahuje preddefinované dizajny.
+
+[Carbon Components](http://react.carbondesignsystem.com/) - Kolekcia rôznych UI hotových komponentov od IBM.
+
+[Fabric](https://developer.microsoft.com/en-us/fabric#/components) - Rôzne komponenty od Microsoftu.
+
+*Tu chýbajú knižnice ako React Bootstrap alebo Material UI, boli vyberané skôr tak, aby sa vám podarilo vytvoriť pekný web čo najjednoduchšie 📚.*
+
 
 ## Preklady
 
@@ -173,7 +180,7 @@ _V tejto časti som písal hlavne zo skúsenosti kolegov._
 
 ## Formuláre
 
-[Redux Form](https://github.com/erikras/redux-form) - Drží formuláre v state containery. Treba poznať [HOC](https://reactjs.org/docs/higher-order-components.html) a [Redux](https://github.com/reduxjs/react-redux).
+[Redux Form](https://github.com/erikras/redux-form) - Drží formuláre v state containeri. Treba poznať [HOC](https://reactjs.org/docs/higher-order-components.html) a [Redux](https://github.com/reduxjs/react-redux).
 
 [Formik](https://jaredpalmer.com/formik) - kompletné riešenie pre formuláre, vrátane validácie, ... Jedno z najpopúlárnejších riešení, ktoré poradil aj [Facebook](https://reactjs.org/docs/forms.html#fully-fledged-solutions).
 
