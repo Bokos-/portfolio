@@ -8,10 +8,10 @@ Za posledný rok som sa stretol s množstvom knižníc, ktoré sa týkajú React
 Je to dané najmä tým, že som nemal veľké predchádzajúce skúsenosti s ním
 a zároveň javascript je tak rýchly jazyk, že v ňom vychádza každý deň
 nové množstvo knižníc.
-Rád by som si tu odložil doterajšie skúsenosti a priblížil vám čo všetko považujem
+Rád by som si tu odložil doterajšie skúsenosti a priblížil vám, čo všetko považujem
 dnes za nevyhnutné vedieť pri práci s Reactom. Knižnice môžu pomôcť hlavne tým, ktorí
-s ním začínajú. Začiatok som absolvoval s oficálnym [tutoriálom](https://reactjs.org/tutorial/tutorial.html). Keď
-si človek uchopí základné pojmy a zistí ako približne [štruktúrovať React projekt](https://reactjs.org/docs/faq-structure.html), potrebuje dostať nejaký background k aktuálnym populárnym knižniciam.
+s ním začínajú. Začiatok som absolvoval s oficiálnym [tutoriálom](https://reactjs.org/tutorial/tutorial.html). Keď
+si človek uchopí základné pojmy a zistí, ako približne [štruktúrovať React projekt](https://reactjs.org/docs/faq-structure.html), potrebuje dostať nejaký background k aktuálnym populárnym knižniciam.
 Tu je zoznam knižníc, ktoré považujem za dôležité.
 
 > Don’t overthink it.
@@ -24,7 +24,7 @@ Tu je zoznam knižníc, ktoré považujem za dôležité.
 [create-react-app](https://github.com/facebook/create-react-app) -
 ak nemáte skúsenosti s Reactom, táto knižnica vám vytvorí boilerplate (kostra projektu) pre vašu
 aplikáciu. Obsahuje všetky nevyhnutné konfigurácie a závislosti, aby ste mohli
-rovno písať React a nemuseli sa o nič starať. Na začiatku veľa súvislostí ešte nemusíte vedieť a tento tool sa postará o to.
+rovno písať React a nemuseli sa o nič starať. Na začiatku veľa súvislostí ešte nemusíte vedieť. Tento tool sa o to postará.
 
 ```no-text
 What's included? React, JSX, ES6, TypeScript and Flow syntax support.
@@ -55,7 +55,7 @@ jeho vnútorné komponenty vo vnútri ich vedia čítať pomocou `consumera`.
 ## Serverová komunikácia
 
 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - natívny príkaz z ES6,
-ktorým je možné dopytovať server. Cýbajú mu zatiaľ nejaké funkcie ako napríklad **abort**.
+ktorým je možné dopytovať server. Chýbajú mu zatiaľ nejaké funkcie ako napríklad **abort**.
 
 [Axios](https://github.com/axios/axios) - rozšírená verzia **fetch**, založená
 na XMLHttpRequests.
@@ -81,7 +81,7 @@ axios
 [Apollo Client](https://github.com/apollographql/apollo-client) - knižnica s plnou podporou
 pre [GraphQL](https://graphql.org/). Ponúka tiež [dev tools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm) pre Chrome.
 Odporúčam si to pozrieť. **GraphQL** v skratke: Viacero dopytov je možné zlúčiť do jedného,
-alebo namiesto reťazových volaní na server, je možné ich nahradiť za jeden.
+alebo namiesto reťazových volaní na server ich je možné nahradiť za jeden.
 
 ![GraphQL](./graphql.png)
 
@@ -98,7 +98,7 @@ const Button = styled.a`
 render(<Button href="http://www.martinboksa.eu/">GitHub</Button>)
 ```
 
-[CSS-in-JS](https://cssinjs.org/) - podobná knižnica ako _Styled Components_, používajú ju u nás v praci.
+[CSS-in-JS](https://cssinjs.org/) - podobná knižnica ako _Styled Components_, používame ju v práci.
 
 [classnames](https://github.com/JedWatson/classnames) - zaradil som to do CSS, ale ide skôr
 o utilitu, ktorá pomáha vytvárať class-names pre komponenty. Je to jeden z mojích
@@ -153,7 +153,7 @@ _Tu chýbajú knižnice ako React Bootstrap alebo Material UI, boli vyberané sk
 ## Preklady
 
 [React Intl](https://github.com/yahoo/react-intl) - knižnica na preklady, ktorá okrem iného poskytuje
-formátovanie dátumov, čísiel, reťazcov, pluralizácie, ...
+formátovanie dátumov, čísel, reťazcov, pluralizácie, ...
 
 [react-i18next](https://github.com/i18next/react-i18next) - internacionalizácie pre _reactjs_ / _reactnative_, ktorý je založený na i18next.
 
@@ -167,7 +167,7 @@ _V tejto časti som písal hlavne zo skúsenosti kolegov._
 
 [Jest](https://jestjs.io/en/) - testovacia platforma s nulovou konfiguráciou. Používa ho tiež _Facebook_.
 
-[Enzyme](https://github.com/airbnb/enzyme) testovací nástroj od _Airbnb_.
+[Enzyme](https://github.com/airbnb/enzyme) - testovací nástroj od _Airbnb_.
 
 ## Meta Tags
 
@@ -185,10 +185,10 @@ _V tejto časti som písal hlavne zo skúsenosti kolegov._
 
 [lodash](https://lodash.com/docs/4.17.11) - rozširuje javascript o veľa zaujímavých funkcií ako _debounce_.
 
-[Moment.js](https://momentjs.com/) - parsovanie, manipulácia a zobrazovanie dátumu a času 📅. Existuje ďalších veľa možností na prácu s dátumom.
-Myslím si, že nie je to úplne dobrá utilita. Ale je populárna a známa vo svete javascriptu.
+[Moment.js](https://momentjs.com/) - parsovanie, manipulácia a zobrazovanie dátumu a času 📅. Existuje veľa ďalších možností na prácu s dátumom.
+Myslím si, že [nie je to úplne dobrá utilita](https://hackernoon.com/why-you-should-choose-date-fns-over-moment-js-in-your-nodejs-applications-116d1a709c43), ale je populárna a známa.
 
-[date-fns](https://date-fns.org/) - namiesto momentjs môžete použiť túto knižnicu.
+[date-fns](https://date-fns.org/) - namiesto _momentjs_ môžete použiť túto knižnicu.
 
 > Good library if you’re looking to replace Moment.js for one reason or another. Immutable too.
 >
@@ -209,7 +209,7 @@ vytvoriť _rich editor_. ![Rich Editor](./rich-editor.png)
 
 ## Nice to know
 
-[Storybook](https://github.com/storybooks/storybook) - developerské rozrahnie pre UI komponenty. Vidíte, ako vyzerajú vaše komponenty (za dôsledok sú podľa mňa komponenty, ktoré sa dajú lepšie znova použiť a testovať). Pekný príklad použitia s [Twitterom](https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybook%2Factions%2Factions-panel).
+[Storybook](https://github.com/storybooks/storybook) - developerské rozrahnie pre UI komponenty. Vidíte, ako vyzerajú vaše komponenty . Jeden z dôsledkov použitia Storybook je že komponenty sa dajú lepšie znovu použiť a testovať. Pekný príklad použitia s [Twitterom](https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybook%2Factions%2Factions-panel).
 ![Storybook intro](./storybook-intro.gif)
 
 [Prettier](https://prettier.io/) - jeden z mojích ďalších obľúbených nástrojov. Slúži ako formátovač kódu, snáď všetky známe editory ho integrujú. Stačí stlačiť klávesovú skratku a naformátuje dokument.
