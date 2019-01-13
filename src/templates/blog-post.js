@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
     } = this.props
 
     const discussUrl = `https://twitter.com/search?q=${
-      new URL(post.fields.twitterSlug, siteUrl).href
+      new URL(post.fields.tag, siteUrl).href
     }`
 
     return (
@@ -114,7 +114,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       fields {
-        twitterSlug
+        tag
       }
       frontmatter {
         title

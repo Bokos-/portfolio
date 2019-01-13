@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { FormattedMessage } from 'react-intl'
 
 import Bio from '../components/Bio'
 import Layout from '../layouts/Layout'
@@ -29,6 +30,16 @@ class BlogIndex extends React.Component {
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+
+          const availableLanguages = node.fields.availableLanguages.map(
+            ({ slug, language }, index) => (
+              <span key={slug}>
+                <Link to={slug}>{language}</Link>
+                {node.fields.availableLanguages.length - 1 !== index && ', '}
+              </span>
+            )
+          )
+
           return (
             <div key={node.id}>
               <h3
@@ -41,7 +52,9 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>
-                {node.frontmatter.date} • <ReadTime minutes={node.timeToRead} />
+                {node.frontmatter.date} • <ReadTime minutes={node.timeToRead} />{' '}
+                • <FormattedMessage id="read.in" defaultMessage={'Read in'} />{' '}
+                {availableLanguages}
               </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
@@ -71,6 +84,10 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
+            availableLanguages {
+              slug
+              language
+            }
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")

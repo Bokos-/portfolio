@@ -3,13 +3,15 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const DEFAULT_LANGUAGE = 'en'
 
-function createPost(graphql, createPage, language) {
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+function getPosts(graphql, language = undefined) {
+  const filterCondition = language
+    ? `filter: { frontmatter: { language: { eq: "${language}" } } }`
+    : ''
 
   return graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { language: { eq: "${language}" } } }
+        ${filterCondition}
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
       ) {
@@ -17,6 +19,7 @@ function createPost(graphql, createPage, language) {
           node {
             fields {
               slug
+              tag
             }
             frontmatter {
               title
@@ -26,10 +29,18 @@ function createPost(graphql, createPage, language) {
         }
       }
     }
-  `).then(result => {
+  `)
+}
+
+function createPost(graphql, actions, language) {
+  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+
+  return getPosts(graphql, language).then(result => {
     if (result.errors) {
       throw result.errors
     }
+
+    const { createPage } = actions
 
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
@@ -79,8 +90,8 @@ exports.onCreatePage = ({ page, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  createPost(graphql, createPage, 'en')
-    .then(() => createPost(graphql, createPage, 'sk'))
+  createPost(graphql, actions, 'en')
+    .then(() => createPost(graphql, actions, 'sk'))
     .then(() => {
       const indexPost = path.resolve(`./src/pages/index.js`)
       createPage({
@@ -93,7 +104,51 @@ exports.createPages = ({ graphql, actions }) => {
     })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+function updateAvailableLanguages(nodes, createNodeField) {
+  nodes.forEach(upperNode => {
+    if (
+      !upperNode.fields ||
+      !upperNode.fields.tag ||
+      !upperNode.fields.slug ||
+      !upperNode.frontmatter.language
+    ) {
+      return
+    }
+
+    const availableLanguages = []
+    const {
+      fields: { tag },
+      frontmatter: { language },
+    } = upperNode
+
+    nodes.forEach(node => {
+      if (
+        !node.fields ||
+        !node.fields.tag ||
+        !node.fields.slug ||
+        !node.frontmatter.language
+      ) {
+        return
+      }
+      const {
+        fields: { tag: nodeTag, slug: nodeSlug },
+        frontmatter: { language: nodeLanguage },
+      } = node
+
+      if (nodeTag === tag && nodeLanguage !== language) {
+        availableLanguages.push({ slug: nodeSlug, language: nodeLanguage })
+      }
+    })
+
+    createNodeField({
+      name: 'availableLanguages',
+      value: availableLanguages,
+      node: upperNode,
+    })
+  })
+}
+
+exports.onCreateNode = ({ node, actions, getNode, getNodesByType }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
@@ -109,7 +164,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     values.pop()
 
-    createNodeField({ name: `twitterSlug`, node, value: values.join('/') })
+    createNodeField({ name: `tag`, node, value: values.join('/') })
 
     if (language !== DEFAULT_LANGUAGE) {
       values.splice(1, 0, language)
@@ -120,5 +175,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value: values.join('/'),
     })
+
+    updateAvailableLanguages(getNodesByType(`MarkdownRemark`), createNodeField)
   }
 }
