@@ -40,6 +40,13 @@ class BlogIndex extends React.Component {
             )
           )
 
+          const readIn = availableLanguages.length ? (
+            <React.Fragment>
+              • <FormattedMessage id="read.in" defaultMessage={'Read in'} />{' '}
+              {availableLanguages}
+            </React.Fragment>
+          ) : null
+
           return (
             <div key={node.id}>
               <h3
@@ -53,8 +60,7 @@ class BlogIndex extends React.Component {
               </h3>
               <small>
                 {node.frontmatter.date} • <ReadTime minutes={node.timeToRead} />{' '}
-                • <FormattedMessage id="read.in" defaultMessage={'Read in'} />{' '}
-                {availableLanguages}
+                {readIn}
               </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
