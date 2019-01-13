@@ -21,6 +21,7 @@ class Layout extends React.Component {
   render() {
     const { location, title, children, language } = this.props
 
+    const path = language === 'en' ? '/' : `/${language}`
     const titlePath = [`${__PATH_PREFIX__}/`, `${__PATH_PREFIX__}/sk`]
     let header
 
@@ -38,7 +39,7 @@ class Layout extends React.Component {
               boxShadow: `none`,
               textDecoration: `none`,
             }}
-            to={`/`}
+            to={path}
           >
             {title}
           </Link>
@@ -57,7 +58,7 @@ class Layout extends React.Component {
               boxShadow: `none`,
               textDecoration: `none`,
             }}
-            to={`/`}
+            to={path}
           >
             {title}
           </Link>

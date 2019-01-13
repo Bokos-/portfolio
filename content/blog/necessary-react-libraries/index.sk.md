@@ -98,8 +98,7 @@ const Button = styled.a`
 render(<Button href="http://www.martinboksa.eu/">GitHub</Button>)
 ```
 
-[CSS-in-JS](https://cssinjs.org/) - podobná knižnica ako *Styled Components*, používajú ju u nás v praci.
-
+[CSS-in-JS](https://cssinjs.org/) - podobná knižnica ako _Styled Components_, používajú ju u nás v praci.
 
 [classnames](https://github.com/JedWatson/classnames) - zaradil som to do CSS, ale ide skôr
 o utilitu, ktorá pomáha vytvárať class-names pre komponenty. Je to jeden z mojích
@@ -143,15 +142,13 @@ si pozrieť [_"Prečo React potrebuje ďalšiu knižnicu na animácie?"_](https:
 
 ![React Spring - Drag&Drop](./dragndrop.gif)
 
-
 [Semantic UI](https://semantic-ui.com/) - UI framework, ktorým vytvoríte responzívny web. Obsahuje preddefinované dizajny.
 
 [Carbon Components](http://react.carbondesignsystem.com/) - Kolekcia rôznych UI hotových komponentov od IBM.
 
 [Fabric](https://developer.microsoft.com/en-us/fabric#/components) - Rôzne komponenty od Microsoftu.
 
-*Tu chýbajú knižnice ako React Bootstrap alebo Material UI, boli vyberané skôr tak, aby sa vám podarilo vytvoriť pekný web čo najjednoduchšie 📚.*
-
+_Tu chýbajú knižnice ako React Bootstrap alebo Material UI, boli vyberané skôr tak, aby sa vám podarilo vytvoriť pekný web čo najjednoduchšie 📚._
 
 ## Preklady
 
