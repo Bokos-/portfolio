@@ -106,8 +106,7 @@ const Example = () => (
     <div>Device Test!</div>
     <MediaQuery query="(min-device-width: 1824px)">
       <div>You have a huge screen</div>
-    </MediaQuery>
-    <MediaQuery query="(max-width: 1224px)">
+    </MediaQuery>f<MediaQuery query="(max-width: 1224px)">
       <div>You are sized like a tablet or mobile phone though</div>
     </MediaQuery>
   </div>
@@ -156,7 +155,7 @@ _In this part I wrote mainly from the experience of my colleagues._
 
 ## Meta Tags
 
-[React Document Title](https://github.com/gaearon/react-document-title) - set `javascript÷document.title` using `jsx÷<DocumentTitle title="Awesome Title">`.
+[React Document Title](https://github.com/gaearon/react-document-title) - set `javascript÷document.title`.
 
 [React Helmet](https://github.com/nfl/react-helmet) - tool for `html÷<head>` management.
 

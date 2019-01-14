@@ -171,7 +171,7 @@ _V tejto časti som písal hlavne zo skúsenosti kolegov._
 
 ## Meta Tags
 
-[React Document Title](https://github.com/gaearon/react-document-title) - nastavenie `javascript÷title` pomocou `jsx÷<DocumentTitle title="Awesome Title">`.
+[React Document Title](https://github.com/gaearon/react-document-title) - nastavenie `javascript÷document.title`.
 
 [React Helmet](https://github.com/nfl/react-helmet) - nástroj na správu hlavičiek `html÷<head>`.
 
