@@ -4511,16 +4511,18 @@ gatsby-cli@^2.4.8:
     yargs "^11.1.0"
     yurnalist "^1.0.2"
 
-gatsby-image@^2.0.22:
-  version "2.0.25"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.0.25.tgz#30547589701db4c4c3e954609201fce2103ec8de"
+gatsby-image@^2.0.26:
+  version "2.0.26"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.0.26.tgz#ae97a62a49237b65660ff9c1b4a559660878bb17"
+  integrity sha512-bvW9jvrGsc0lC36ikwkLCDicgolyAtM/Z56aavXy+aVE0GRL2/RprolRITIjt1ff3pzo+n0L7unAZOoR4oUR1g==
   dependencies:
     "@babel/runtime" "^7.0.0"
     prop-types "^15.6.1"
 
-gatsby-link@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.7.tgz#b25b75c9d2dd34cfee4fa629019f8c6b0da719c9"
+gatsby-link@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.8.tgz#35db4c24372c9da54ffc9c3baf165b90d1fcfcb9"
+  integrity sha512-IDiSuoJFY1y08yFsQ0Axx56t04VhJb2LMRqp52OYYQCXhcHIHfmjgpcTQw/2lqmgUX6dSBqn3mSm/UjycpLPDg==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@reach/router" "^1.1.1"
@@ -4663,9 +4665,10 @@ gatsby-remark-external-links@0.0.4:
     unist-util-find "^1.0.1"
     unist-util-visit "^1.1.3"
 
-gatsby-remark-images@^2.0.4:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-2.0.6.tgz#7567b40be11fec8931084f27d8b3aa18ccc4d5fc"
+gatsby-remark-images@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.0.1.tgz#01ac72451841ba5b82b9b260fe99ffca005c1eb4"
+  integrity sha512-dWqubKmFuT/yTc+ttBtoLxmBfWWHfUd+vDPa/FczWJsQ/8VpaVe0mPDAhG8+RQ3ZVWfU4WMQwF0NjZ/xfL00qg==
   dependencies:
     "@babel/runtime" "^7.0.0"
     cheerio "^1.0.0-rc.2"
@@ -4702,9 +4705,10 @@ gatsby-remark-smartypants@^2.0.5:
     retext-smartypants "^3.0.0"
     unist-util-visit "^1.3.0"
 
-gatsby-source-filesystem@^2.0.2:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.13.tgz#c0c814c79065f63dc28b0d96fffcebba59c6aa2d"
+gatsby-source-filesystem@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.16.tgz#d2d0ed731c07739b66bef3862b2fa6a78a17c3eb"
+  integrity sha512-cq9NGoO9BqBsopBRDh7vVZF9HuUzEFKyssKUlbbgkdC4U1OyYI7JP6rjNrcK9J5VoLhcYze6isFRhPdLKkTiLQ==
   dependencies:
     "@babel/runtime" "^7.0.0"
     better-queue "^3.8.7"
@@ -4716,6 +4720,7 @@ gatsby-source-filesystem@^2.0.2:
     md5-file "^3.1.1"
     mime "^2.2.0"
     pretty-bytes "^4.0.2"
+    progress "^1.1.8"
     read-chunk "^3.0.0"
     slash "^1.0.0"
     valid-url "^1.0.9"
@@ -4756,9 +4761,10 @@ gatsby-transformer-sharp@^2.1.3:
     probe-image-size "^4.0.0"
     sharp "^0.21.0"
 
-gatsby@^2.0.76:
-  version "2.0.90"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.90.tgz#9d6cd0798fd676d7eda102cc7eafe5c0dbad9301"
+gatsby@^2.0.91:
+  version "2.0.91"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.91.tgz#177869f475615dd4bd67e6b9d96779b214f3df52"
+  integrity sha512-Z54P7oLqn2x1pvAPmk3CDRAxKMCXKBwsU3YzMAofAnA2OJXoCfZmbbkn9aLtXGin67sM9Jqg3GXnEcb6IiODcQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4814,7 +4820,7 @@ gatsby@^2.0.76:
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
     gatsby-cli "^2.4.8"
-    gatsby-link "^2.0.7"
+    gatsby-link "^2.0.8"
     gatsby-plugin-page-creator "^2.0.5"
     gatsby-react-router-scroll "^2.0.2"
     glob "^7.1.1"
@@ -10468,20 +10474,22 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typography-breakpoint-constants@^0.15.10:
-  version "0.15.10"
-  resolved "https://registry.yarnpkg.com/typography-breakpoint-constants/-/typography-breakpoint-constants-0.15.10.tgz#bd5308dd57250e7f28a8c6e1c0e668ddf1178c5c"
+typography-breakpoint-constants@^0.16.18:
+  version "0.16.18"
+  resolved "https://registry.yarnpkg.com/typography-breakpoint-constants/-/typography-breakpoint-constants-0.16.18.tgz#5b1e24a31879662ca0456828b8f8f8158cd2b436"
+  integrity sha512-9V3cyN4Lh9SUecjirf6F0+bNvIpI0aLx8qXBzErDRdDizPXOojjdSudFr3kv5wx0qseVzUiFkm8LNXvKGOrZKQ==
 
 typography-normalize@^0.16.18:
   version "0.16.18"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.18.tgz#19e8db32c6881d3745b7d67dc63ee6f6cfb681d1"
 
-typography-theme-wordpress-2016@^0.15.10:
-  version "0.15.10"
-  resolved "https://registry.yarnpkg.com/typography-theme-wordpress-2016/-/typography-theme-wordpress-2016-0.15.10.tgz#8f14f002af9334303b858093358455e02d33131d"
+typography-theme-wordpress-2016@^0.16.18:
+  version "0.16.18"
+  resolved "https://registry.yarnpkg.com/typography-theme-wordpress-2016/-/typography-theme-wordpress-2016-0.16.18.tgz#bdca238ea43cabb9b590c299963c3fb8abc671af"
+  integrity sha512-ULTVAYGPtrL5C+y0YQr7eJJQ9F1dibnUSDuFKOEi8WFWmPcYGoMavtDGLEd1d+8TKMtnyi5sB9QvI7d0WAFxqA==
   dependencies:
     gray-percentage "^2.0.0"
-    typography-breakpoint-constants "^0.15.10"
+    typography-breakpoint-constants "^0.16.18"
 
 typography@^0.16.17:
   version "0.16.18"

@@ -36,7 +36,6 @@ class BlogPostTemplate extends React.Component {
       )
     )
 
-    console.log(availableLanguages.length)
     const readIn = availableLanguages.length ? (
       <React.Fragment>
         • <FormattedMessage id="read.in" defaultMessage={'Read in'} />{' '}
