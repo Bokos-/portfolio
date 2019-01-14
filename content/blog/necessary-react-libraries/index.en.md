@@ -6,7 +6,7 @@ language: en
 
 In the last year, I've met many new libraries that are related to React.
 It's especially due to the fact I didn't have previous experience and as well javascript is
-such fast programming language that a lot of libraries are released every day.
+such fast programming language where a lot of libraries are released every day.
 I would like to postpone my experience here and bring you closer to what I think.
 What do I see and consider today to be necessary when working with React? Libraries can help those who start with it.
 I started with React at the official [tutorial](https://reactjs.org/tutorial/tutorial.html) from Facebook.
@@ -49,7 +49,7 @@ If you want to avoid a boilerplate (without shares, switches, ...) which are ass
 
 ## Server Communication
 
-[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - native command from ES6 who can query the server.
+[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - native command since ES6 who can query the server.
 Some features such as **abort** are missing.
 
 [Axios](https://github.com/axios/axios) - an extended version of **fetch**, based on XMLHttpRequests.
