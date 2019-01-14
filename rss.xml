@@ -1,4 +1,240 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Martin Bokša Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://martinboksa.eu</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 21:39:17 GMT</lastBuildDate><item><title><![CDATA[Čo považujem za nevyhnutné pri Reacte?]]></title><description><![CDATA[Za posledný rok som sa stretol s množstvom knižníc, ktoré sa týkajú Reactu.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Martin Bokša Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://martinboksa.eu</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 21:45:21 GMT</lastBuildDate><item><title><![CDATA[Necessary React libraries and skills!]]></title><description><![CDATA[In the last year, I’ve met many new libraries that are related to React.
+It’s especially due to the fact I didn’t have previous experience…]]></description><link>http://martinboksa.eu/necessary-react-libraries</link><guid isPermaLink="false">http://martinboksa.eu/necessary-react-libraries</guid><pubDate>Sun, 06 Jan 2019 11:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In the last year, I’ve met many new libraries that are related to React.
+It’s especially due to the fact I didn’t have previous experience and as well javascript is
+such fast programming language where a lot of libraries are released every day.
+I would like to postpone my experience here and bring you closer to what I think.
+What do I see and consider today to be necessary when working with React? Libraries can help those who start with it.
+I started with React at the official &lt;a href=&quot;https://reactjs.org/tutorial/tutorial.html&quot;&gt;tutorial&lt;/a&gt; from Facebook.
+When you understand the basic concepts and find out how to &lt;a href=&quot;(https://reactjs.org/docs/faq-structure.html)&quot;&gt;structure the React project&lt;/a&gt;, then you need to get some background to the current popular libraries. Here is my list of libraries.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don’t overthink it.
+If you’re just starting a project, don’t spend more than five minutes on choosing a file structure.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;React&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;boilerplate&quot;&gt;&lt;a href=&quot;#boilerplate&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Boilerplate&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/create-react-app&quot;&gt;create-react-app&lt;/a&gt; -
+if you do not have a React experience, this library will create a boilerplate for your application. It contains all the necessary configurations and dependencies, so you can write React and do not have to worry about anything.
+In the beginning, you do not have to know so many tools and connections. This utility will take care of it.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-text&quot;&gt;&lt;pre class=&quot;language-no-text&quot;&gt;&lt;code class=&quot;language-no-text&quot;&gt;What&amp;#39;s included? React, JSX, ES6, TypeScript and Flow syntax support.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;state-container&quot;&gt;&lt;a href=&quot;#state-container&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;State Container&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/reduxjs/react-redux&quot;&gt;Redux&lt;/a&gt; - this is &lt;em&gt;a global store with variables&lt;/em&gt;. Why? You do not have to send the variable through other &lt;em&gt;x&lt;/em&gt; components to depth. Instead, you connect it to the global store.
+It is commonly used in applications. For example user data, current theme, application status, …
+I recommend installing the &lt;a href=&quot;(https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)&quot;&gt;plugin&lt;/a&gt; to develop into Chrome.
+If you want to avoid a boilerplate (without shares, switches, …) which are associated with Redux, I recommend &lt;a href=&quot;https://github.com/rematch/rematch&quot;&gt;rematch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.24091778202677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAACDklEQVQozxWRW1PaUBSF8//f2jrtjJ22TkdRCpaLIZeJEIiEJBBJgIRLggkk3KJV6Vjxba8eH/bs/fSdb63D7bcWPa3b9Jxo9ML2v41Oh6xLh12P3rIh7VObVkGT7ucqaQZPR2KBvkvnVLq5pN1cpm0o0yYUaeEXaGR+IO4hVbEcXCJ2RdzPm3jdWHjZGHjZmjjshniIu4jGCqbOFQJXQsviYem/UVQq4Ds87u9ErEMJkfcLI/MTuJQdk06e1kGDUl+hVb9Mf5np40qn18ylt51P+6RHHadBLUug4FagVleiZChRy6iRP1Eom4sUuDlm+Jm4iX6GhS/QwhOxi24Q2TUsezlkkcxMbRy2A7xmfSwCDXxTgOercMwas6rD7fKwzTLSSQXT2zMMjS/gZnYJfvuU0rGE1eyawRWEnTxi+xzPawNPKwOPbNYzDYGjouc1kIzrWAUNzJwynHYRM7fEKrmA22HAaFBFeFuiZFxDPKohncqY2RUENis9vqY/iY7luMEe0rANb+DYCrJFG5Evo69f4o4l62l5uEYeTucY3NzOYe4WKfariEZXbCoMUKbYKzK4gM17t1OFwTQkExVBX0QwqMF7T2bzDCxhZFUxNEsM+A2c1TiCKnwko/4VZvMEev0HTfsXiL0C65Vn5jKLW2efpmLYrUJXc2jKJ9CUnywqSzW+RujVMXEFDMxT/AdRGh4RjQzSbgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Redux&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png&quot;
+        srcset=&quot;/static/f4d335a45bb8c40a64b8333f4b6fb762/1a291/redux.png 148w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/2bc4a/redux.png 295w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png 590w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/526de/redux.png 885w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/fa2eb/redux.png 1180w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png 1569w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://reactjs.org/docs/context.html&quot;&gt;React Context&lt;/a&gt; - it’s a relatively new feature in React. It is the theoretical replacement for Redux.
+&lt;strong&gt;Concept:&lt;/strong&gt; The &lt;code class=&quot;language-text&quot;&gt;provider&lt;/code&gt; is set up and his internal components can be read by the &lt;code class=&quot;language-text&quot;&gt;consumer&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 321px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.40498442367601%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADpklEQVQ4yz2Q21MaZxjGueuf1n+jN7loO+3YdNJmbBMTq2ZSTYwRT2AQUJfzcZFlOS7LAsthASWAICCHMZ5iRXPd9+lnO9OL3+x+O+8+3+99dHdD7e/7kUb348q/3A3LdDss0WRUpouCQEMpQJ1YgJp723RWkdh3jVGhyalGt4ybfpmuugW66OTpopUn3Zdxje5GGu5G5f/53FdxKofQCztRcNugLS2g82wKR347TvNRjLUEPg8e5sq4PingspPHxTGjqUL3ZVSjybCCCTObDDX6i9l100E6q6bYM0zNbIw6GYFOJZ7OazJdNhXq5kTqxv103VHpqp2ny+MsXbYeDAukux9WaTLQcDso0d24goujFPqZMD4dF3CipnCsSpj0ipCUJL7e9GLaxmM3GkMlzjaIenHZVnHeUOi8kcNZPUs6Fsa6KOGmp9JkrOEoaEc/F0NPk9ErpVBXorhpZLDhDuKr1w48MvsghoJY84XQFjwYqiLOGjkaH8oYHWb+C7zusx66ebo6yeMoJaAshnCcj7MBCbVUGPW0gIYSwbbJhpYiIs97YdlzICrw6DLLwaFMg2oaw6pMupt+kS66D6VmaFiTUM9EWVgMTfbjqJpgqwXRzQnIigGY3B60Mgcoij58lHgYOScOQ070WKf9chLdYpx0V6zYT60M2qpIdVlATQqjkYmgwNZpKTwaMo9KzIu2EoTFwSF94ILk5yAzNo1m7Cwto57w0UkhwiTCLLCdo49KGKrgIzXix6CSwEkhjJjLirh7jwUym7QHpQiHmGMHB/s7KAp2aBEnBM6M0L4ZSshJR+kgakk/6c7qEtVSzCLpoxIzaWZ5FKN2JL0WZrGLXNAKNWSGyG0wthDhDMj4zVB5C0KWLZQEDnGHlYqCCxXRRbp+SaRO4QBVyUM1yYNyzAE1vI+ky8QGjUh7DYg71yHa9PB8eAfe+p69rzHWEd5bh9vAztw2ZQO7UPy7pGvneKql3agknFSIcCQHLBR1GYnfXSWX8U+ybSzQvn6OrO9naW/1D7Kzs8uwSK6tRfKZlilo0ZPAbZDo2ELUYSRdXX5Y1Q45YKaEZxs8twafdQX6V9N4+eRbzD/9HvO/fofnjx/h6Q/f4PVvP8L0dgam5RewrMxhX/8KLsMbeHdWELTqSafFnaSwPiLOTfJaVsjGbt9ZnSPD8gxtLf5Oq3O/0PLLn+nti8eMn+jNzBQtPZ+ildkntL4wTZuLz+jDu1myrM6T07BE/wAzG3uw7M6TywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;React Context&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
+        srcset=&quot;/static/a79300f87d3c6b1b8355615b213cdb07/09b75/react-context.png 148w,
+/static/a79300f87d3c6b1b8355615b213cdb07/438fb/react-context.png 295w,
+/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png 321w&quot;
+        sizes=&quot;(max-width: 321px) 100vw, 321px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mobxjs/mobx&quot;&gt;MobX&lt;/a&gt; - another option for state container.&lt;/p&gt;
+&lt;h2 id=&quot;storage&quot;&gt;&lt;a href=&quot;#storage&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Storage&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/marcuswestin/store.js/&quot;&gt;store.js&lt;/a&gt; - Helps with local storage-based applications. Older iPhone phones do not support it 😅.&lt;/p&gt;
+&lt;h2 id=&quot;server-communication&quot;&gt;&lt;a href=&quot;#server-communication&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Server Communication&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API&quot;&gt;fetch&lt;/a&gt; - native command since ES6 who can query the server.
+Some features such as &lt;strong&gt;abort&lt;/strong&gt; are missing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/axios/axios&quot;&gt;Axios&lt;/a&gt; - an extended version of &lt;strong&gt;fetch&lt;/strong&gt;, based on XMLHttpRequests.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; axios &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;axios&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+axios
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/user?ID=12345&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;response&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;response&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sindresorhus/ky&quot;&gt;Ky&lt;/a&gt; - my colleague advised me the work with this library, which is based on fetch. Comparison of Axios vs. Ky:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Yes. Axios is based on XMLHttpRequests, while Ky is based on Fetch. Axios has manually implemented a lot of things we get for free with Fetch. Fetch-based libs should be more stable and less buggy in general. Ky also has retry functionality.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://twitter.com/sindresorhus/status/1037763588826398720&quot;&gt;Sindre Sorhus&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/apollographql/apollo-client&quot;&gt;Apollo Client&lt;/a&gt; - Fully supported library for &lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQL&lt;/a&gt;. It also offers &lt;a href=&quot;https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm&quot;&gt;dev tools&lt;/a&gt; for Chrome. I recommend looking at it.
+&lt;strong&gt;GraphQL&lt;/strong&gt; at a glance: Multiple queries can be merged into one, or instead of chain calls to the server, they can be replaced by one.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 40.59539918809201%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAACLUlEQVQozx2RaU8aARiE+bPtHzCmNjGm3vdJ61YRTIGCcoi7bCmwlnNlOZSgsirKIZ7UkCpWjUnTmW798GTej8+8Y+rUU3hqaPhzVUAjpyArSahnf+DlPIeHWgbtwwRu9Rhu9iJoFmQcJgOQVq3wL1twnBZR1USU4x6UFCcy4hJMnVoSjw2NLxd5XpUSrGkRNvIKnxo5/jpOsnWg8KfBZTHMek6iHvcz6bdT3XSybNwnasBIL4sRB9WAQNPvhvrfkM/nBdwVvTgtRlHfl3BdDqKtx9E6iOK6FEZzR3410WM+yO4JpOTPOEz4sfPdhd2wE5poQWx9AabHuornZp73ehiPe+s8OUjzRt9iJe9ia1/hTSnCy91vPEp6mBVXqQVXuf3VwuyajduijXGPhSm/lQmvwLBjmqansww61QxbewruKmk2C1Fe7IaN6jKrGZkXO0Zu+1gI2pjyCUy6JqhY5xiyzVH6MsItt8CQc5Ehh5mBlUmjsmHYOU2jfZTCQ1WF8Su09qM4y8vGOBJq2gZKETvia2ZsWsYhCoPYMNK7NA7H/ADcnybgXZ42mIJ7cRSm+0qc95XEK1Vtk8eqj0dpHxs5kZW0hwXZStW3SMU5Q58wQuf8AIWhHpr7u2kZ7+PK5AfaF0Zomx3k0mQfTW1d+XtbVmAsiULYjkzQBk22QY+vIydZEXPNIuqcgmQdhV8YwsrYOwx3v0V/1xvM9XfBPNyDj2O9mB/txczge/wDR2z8vnOY3KMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;GraphQL&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png&quot;
+        srcset=&quot;/static/f96e4e3efe8134cd40bd5b493015061a/1a291/graphql.png 148w,
+/static/f96e4e3efe8134cd40bd5b493015061a/2bc4a/graphql.png 295w,
+/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png 590w,
+/static/f96e4e3efe8134cd40bd5b493015061a/526de/graphql.png 885w,
+/static/f96e4e3efe8134cd40bd5b493015061a/fa2eb/graphql.png 1180w,
+/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png 1478w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;css&quot;&gt;&lt;a href=&quot;#css&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CSS&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/styled-components/styled-components&quot;&gt;Styled Components&lt;/a&gt; - visualization of components in javascript using CSS. An advantage, for example: is to avoid class-name conflicts.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Button &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; styled&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;a&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`
+  display: inline-block;
+  color: #e62076;
+`&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Button href&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;http://www.martinboksa.eu/&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;GitHub&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Button&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://cssinjs.org/&quot;&gt;CSS-in-JS&lt;/a&gt; - a similar library like &lt;em&gt;Styled Components&lt;/em&gt;, we use it at work.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/JedWatson/classnames&quot;&gt;classnames&lt;/a&gt; - I’ve put it in CSS category, but it’s a utility that helps create class-names for components. It’s one of my most favorite tools. I think the code is much cleaner.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;classNames&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;foo&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; bar&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// =&gt; result class name: &apos;foo bar&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/contra/react-responsive&quot;&gt;react-responsive&lt;/a&gt; - a simple way to use the media query in React to create a responsive web.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; MediaQuery &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react-responsive&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Example&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Device Test&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;MediaQuery query&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;(min-device-width: 1824px)&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;You have a huge screen&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;MediaQuery&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;f&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;MediaQuery query&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;(max-width: 1224px)&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;You are sized like a tablet or mobile phone though&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;MediaQuery&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/react-dnd/react-dnd&quot;&gt;React DnD&lt;/a&gt; - library to create a Drag &amp;#x26; Drop interface.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/atlassian/react-beautiful-dnd&quot;&gt;react-beautiful-dnd&lt;/a&gt; - at work, guys have an excellent experience with this &lt;em&gt;DnD&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;it has great performance.
+have plenty of examples to cover most of the basic cases.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Denis Slávik&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/react-spring/react-spring&quot;&gt;React Spring&lt;/a&gt; - animation library. I have a very good experience with the performance you can achieve with that. I recommend looking at &lt;a href=&quot;https://blog.usejournal.com/why-react-needed-yet-another-animation-library-introducing-react-spring-8212e424c5ce&quot;&gt;“Why does React need another animation library?”&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/dragndrop-c409f1a43fcb00ed186997b56efe72ab.gif&quot; alt=&quot;React Spring - Drag&amp;#x26;Drop&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://semantic-ui.com/&quot;&gt;Semantic UI&lt;/a&gt; - UI framework to create a responsive web. Contains completed components.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://react.carbondesignsystem.com/&quot;&gt;Carbon Components&lt;/a&gt; - Collection of different UI components from IBM.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.microsoft.com/en-us/fabric#/components&quot;&gt;Fabric&lt;/a&gt; - Various components from Microsoft.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;There are missing libraries like React Bootstrap or Material UI, libraries were selected so that you could create a nice web as simple as possible 📚.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;internationalization&quot;&gt;&lt;a href=&quot;#internationalization&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Internationalization&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/yahoo/react-intl&quot;&gt;React Intl&lt;/a&gt; - a translation library that also provides formatting of dates, numbers, strings, pluralizations, …&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/i18next/react-i18next&quot;&gt;react-i18next&lt;/a&gt; - internationalization for &lt;em&gt;reactjs&lt;/em&gt; / &lt;em&gt;reactnative&lt;/em&gt;, which is based on i18next.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ratson/react-intl-redux&quot;&gt;React Intl Redux&lt;/a&gt; - translations are kept in redux store.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://facebookincubator.github.io/fbt/&quot;&gt;FBT&lt;/a&gt; - a framework for translation, used in Facebook.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In this part, I wrote mainly from the experience of my colleagues.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;testing&quot;&gt;&lt;a href=&quot;#testing&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jestjs.io/en/&quot;&gt;Jest&lt;/a&gt; - test platform with zero configuration. It is also used on &lt;em&gt;Facebook&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/airbnb/enzyme&quot;&gt;Enzyme&lt;/a&gt; - a test tool from &lt;em&gt;Airbnb&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;meta-tags&quot;&gt;&lt;a href=&quot;#meta-tags&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Meta Tags&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/gaearon/react-document-title&quot;&gt;React Document Title&lt;/a&gt; - set &lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;title&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/nfl/react-helmet&quot;&gt;React Helmet&lt;/a&gt; - tool for &lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt; management.&lt;/p&gt;
+&lt;h2 id=&quot;forms&quot;&gt;&lt;a href=&quot;#forms&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Forms&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/erikras/redux-form&quot;&gt;Redux Form&lt;/a&gt; - State of forms is in the state container. Need to know &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot;&gt;HOC&lt;/a&gt; and &lt;a href=&quot;https://github.com/reduxjs/react-redux&quot;&gt;Redux&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jaredpalmer.com/formik&quot;&gt;Formik&lt;/a&gt; - complete solution for forms, including validation, … One of the most popular solutions.&lt;/p&gt;
+&lt;h2 id=&quot;utilities&quot;&gt;&lt;a href=&quot;#utilities&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Utilities&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://lodash.com/docs/4.17.11&quot;&gt;lodash&lt;/a&gt; - Extends javascript with many interesting functions like &lt;em&gt;debounce&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://momentjs.com/&quot;&gt;Moment.js&lt;/a&gt; - parsing, manipulating, and displaying the date and time 📅. There are many more options to work with the date.
+I think it’s &lt;a href=&quot;https://hackernoon.com/why-you-should-choose-date-fns-over-moment-js-in-your-nodejs-applications-116d1a709c43&quot;&gt;not a good utility&lt;/a&gt;. But it is popular and known in the world of javascript.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://date-fns.org/&quot;&gt;date-fns&lt;/a&gt; - instead of &lt;em&gt;momentjs&lt;/em&gt; you can use this library.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Good library if you’re looking to replace Moment.js for one reason or another. Immutable too.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://twitter.com/dan_abramov/status/805030922785525760?lang=en&quot;&gt;Dan Abramov&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;rich-editor&quot;&gt;&lt;a href=&quot;#rich-editor&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rich Editor&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/draft-js&quot;&gt;Draft.js&lt;/a&gt; - a framework which creates a &lt;em&gt;rich editor&lt;/em&gt;.
+&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 563px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 40.14209591474245%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAv0lEQVQoz5WSWw6CMBBFu/9FKYKSqPzLL7AAwIZnW67eSUpqIhomOZ12oCeZSZVzDrNxsNbCGCOEezLPsxDWyDRNUqeDLMsCZayD7h2GYRD6vhf8vus6NE0DrTXGcRQJ4be2baXOoIxS5ZyFfrZykVBU17VknnmJ+VdQ5lG0fgvfBtsn/rzFKuTP9yzDJU1xOEaIkwRFUWJvrC1zuI88f4vOuF5viE4xyqr6aGWXcKvlcC57UFz8Mwnzv5ltzfEF3ctyimWDEIMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Rich Editor&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png&quot;
+        srcset=&quot;/static/1539cd7870523d529ad6c5901a8dad27/d8532/rich-editor.png 148w,
+/static/1539cd7870523d529ad6c5901a8dad27/9bf66/rich-editor.png 295w,
+/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png 563w&quot;
+        sizes=&quot;(max-width: 563px) 100vw, 563px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;type-checking&quot;&gt;&lt;a href=&quot;#type-checking&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Type Checking&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/prop-types&quot;&gt;PropTypes&lt;/a&gt; - check &lt;em&gt;props&lt;/em&gt; in runtime.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flow.org/en/docs/frameworks/react/&quot;&gt;flow&lt;/a&gt; - static typechecker.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt; - a language that translates into javascript but has types. I recommend seeing it.&lt;/p&gt;
+&lt;h2 id=&quot;nice-to-know&quot;&gt;&lt;a href=&quot;#nice-to-know&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nice to know&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/storybooks/storybook&quot;&gt;Storybook&lt;/a&gt; - developer interface for UI Components. You see how your components look (imo, components can be simple reused and tested). A nice example of using &lt;a href=&quot;https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&amp;#x26;selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&amp;#x26;full=0&amp;#x26;addons=1&amp;#x26;stories=1&amp;#x26;panelRight=1&amp;#x26;addonPanel=storybook%2Factions%2Factions-panel&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/storybook-intro-5eb59c13f71816a543bf88170df88c36.gif&quot; alt=&quot;Storybook intro&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://prettier.io/&quot;&gt;Prettier&lt;/a&gt; - one of my favorite tools. It’s a code formatter and is integrated into all well-known editors. Just press the shortcut key to format the document.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eslint.org/&quot;&gt;ESLint&lt;/a&gt; - &lt;em&gt;The pluggable linting utility for JavaScript and JSX.&lt;/em&gt;
+I used it in all my javascript projects. Sometimes it’s annoying.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://palantir.github.io/tslint/&quot;&gt;TSLint&lt;/a&gt; - As ESLint but for TypeScript to static code analysis.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.pixijs.com/&quot;&gt;PixiJS&lt;/a&gt; - Last year I was working on graphical editor based on React and PixiJS. I can fully recommend both.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt; - helps to create pages without &lt;em&gt;“a headache”&lt;/em&gt;. For example, this technology has been used in &lt;a href=&quot;https://reactjs.org/docs/getting-started.html&quot;&gt;React Docs&lt;/a&gt; or in this blog.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://sentry.io/welcome/&quot;&gt;SENTRY&lt;/a&gt; - the tool I used to capture bugs in production. I can recommend it. Suitable to combine perfectly with React, especially when adding &lt;a href=&quot;https://reactjs.org/docs/error-boundaries.html&quot;&gt;Error Boundaries&lt;/a&gt; in the &lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;componentDidCatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt; method.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;There is a lot of libraries and utilities to work with React and javascript. I think this is just a fraction of the list that could be useful to you. You can see more libraries &lt;a href=&quot;https://github.com/brillout/awesome-react-components&quot;&gt;here&lt;/a&gt;.
+The libraries you choose are up to you. It depends on what you want to achieve. All libraries are &lt;em&gt;opensource&lt;/em&gt; and if necessary, the redesign may not be so demanding.&lt;/p&gt;
+&lt;p&gt;When I was writing a blog, I was thinking about who will read this article. I finally decided for people who do not have a great experience with React. As a result, I decided not to describe the tools like &lt;em&gt;webpack&lt;/em&gt;, &lt;em&gt;parcel&lt;/em&gt;, &lt;em&gt;grunt&lt;/em&gt;, … I think these are things that are not necessary at the beginning.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Čo považujem za nevyhnutné pri Reacte?]]></title><description><![CDATA[Za posledný rok som sa stretol s množstvom knižníc, ktoré sa týkajú Reactu.
 Je to dané najmä tým, že som nemal veľké predchádzajúce…]]></description><link>http://martinboksa.eu/sk/necessary-react-libraries</link><guid isPermaLink="false">http://martinboksa.eu/sk/necessary-react-libraries</guid><pubDate>Sun, 06 Jan 2019 11:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Za posledný rok som sa stretol s množstvom knižníc, ktoré sa týkajú Reactu.
 Je to dané najmä tým, že som nemal veľké predchádzajúce skúsenosti s ním
 a zároveň javascript je tak rýchly jazyk, že v ňom vychádza každý deň
@@ -27,7 +263,7 @@ Používa sa často. Odporúčam si doinštalovať na vyvíjanie &lt;a href=&quo
 Ak sa chcete vyhnúť boilerplate (bez akcií, switchov, …), ktorý je spojený s Reduxom, odporúčam &lt;a href=&quot;https://github.com/rematch/rematch&quot;&gt;rematch&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png&quot;
+    href=&quot;/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -45,13 +281,13 @@ Ak sa chcete vyhnúť boilerplate (bez akcií, switchov, …), ktorý je spojen�
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Redux&quot;
         title=&quot;&quot;
-        src=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png&quot;
-        srcset=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/1a291/redux.png 148w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/2bc4a/redux.png 295w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png 590w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/526de/redux.png 885w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fa2eb/redux.png 1180w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png 1569w&quot;
+        src=&quot;/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png&quot;
+        srcset=&quot;/static/f4d335a45bb8c40a64b8333f4b6fb762/1a291/redux.png 148w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/2bc4a/redux.png 295w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png 590w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/526de/redux.png 885w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/fa2eb/redux.png 1180w,
+/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png 1569w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
   &lt;/span&gt;
@@ -61,7 +297,7 @@ Je teoretickým nahraditeľom Reduxu. Tu sa ale vytvorí &lt;code class=&quot;la
 jeho vnútorné komponenty vo vnútri ich vedia čítať pomocou &lt;code class=&quot;language-text&quot;&gt;consumera&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
+    href=&quot;/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -79,10 +315,10 @@ jeho vnútorné komponenty vo vnútri ich vedia čítať pomocou &lt;code class=
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
         alt=&quot;React Context&quot;
         title=&quot;&quot;
-        src=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
-        srcset=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/09b75/react-context.png 148w,
-/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/438fb/react-context.png 295w,
-/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png 321w&quot;
+        src=&quot;/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
+        srcset=&quot;/static/a79300f87d3c6b1b8355615b213cdb07/09b75/react-context.png 148w,
+/static/a79300f87d3c6b1b8355615b213cdb07/438fb/react-context.png 295w,
+/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png 321w&quot;
         sizes=&quot;(max-width: 321px) 100vw, 321px&quot;
       /&gt;
   &lt;/span&gt;
@@ -115,7 +351,7 @@ Odporúčam si to pozrieť. &lt;strong&gt;GraphQL&lt;/strong&gt; v skratke: Viac
 alebo namiesto reťazových volaní na server ich je možné nahradiť za jeden.&lt;/p&gt;
 &lt;p&gt;&lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png&quot;
+    href=&quot;/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -133,13 +369,13 @@ alebo namiesto reťazových volaní na server ich je možné nahradiť za jeden.
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
         alt=&quot;GraphQL&quot;
         title=&quot;&quot;
-        src=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png&quot;
-        srcset=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/1a291/graphql.png 148w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/2bc4a/graphql.png 295w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png 590w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/526de/graphql.png 885w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fa2eb/graphql.png 1180w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png 1478w&quot;
+        src=&quot;/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png&quot;
+        srcset=&quot;/static/f96e4e3efe8134cd40bd5b493015061a/1a291/graphql.png 148w,
+/static/f96e4e3efe8134cd40bd5b493015061a/2bc4a/graphql.png 295w,
+/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png 590w,
+/static/f96e4e3efe8134cd40bd5b493015061a/526de/graphql.png 885w,
+/static/f96e4e3efe8134cd40bd5b493015061a/fa2eb/graphql.png 1180w,
+/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png 1478w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
   &lt;/span&gt;
@@ -182,7 +418,7 @@ a majú dosť veľa examples, čo pokryje väčšinu základných vecí.&lt;/p&g
 &lt;p&gt;&lt;a href=&quot;https://github.com/react-spring/react-spring&quot;&gt;React Spring&lt;/a&gt; - knižnica na animácie. Mám veľmi dobrú skúsenosť s výkonom,
 aký je možný s ňou dosiahnúť. Odporúčam
 si pozrieť &lt;a href=&quot;https://blog.usejournal.com/why-react-needed-yet-another-animation-library-introducing-react-spring-8212e424c5ce&quot;&gt;&lt;em&gt;“Prečo React potrebuje ďalšiu knižnicu na animácie?”&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/portfolio/dragndrop-c409f1a43fcb00ed186997b56efe72ab.gif&quot; alt=&quot;React Spring - Drag&amp;#x26;Drop&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/dragndrop-c409f1a43fcb00ed186997b56efe72ab.gif&quot; alt=&quot;React Spring - Drag&amp;#x26;Drop&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://semantic-ui.com/&quot;&gt;Semantic UI&lt;/a&gt; - UI framework, ktorým vytvoríte responzívny web. Obsahuje preddefinované dizajny.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://react.carbondesignsystem.com/&quot;&gt;Carbon Components&lt;/a&gt; - Kolekcia rôznych UI hotových komponentov od IBM.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.microsoft.com/en-us/fabric#/components&quot;&gt;Fabric&lt;/a&gt; - Rôzne komponenty od Microsoftu.&lt;/p&gt;
@@ -227,10 +463,10 @@ vytvoriť &lt;em&gt;rich editor&lt;/em&gt;. &lt;span
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Rich Editor&quot;
         title=&quot;&quot;
-        src=&quot;/portfolio/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png&quot;
-        srcset=&quot;/portfolio/static/1539cd7870523d529ad6c5901a8dad27/d8532/rich-editor.png 148w,
-/portfolio/static/1539cd7870523d529ad6c5901a8dad27/9bf66/rich-editor.png 295w,
-/portfolio/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png 563w&quot;
+        src=&quot;/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png&quot;
+        srcset=&quot;/static/1539cd7870523d529ad6c5901a8dad27/d8532/rich-editor.png 148w,
+/static/1539cd7870523d529ad6c5901a8dad27/9bf66/rich-editor.png 295w,
+/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png 563w&quot;
         sizes=&quot;(max-width: 563px) 100vw, 563px&quot;
       /&gt;
   &lt;/span&gt;&lt;/p&gt;
@@ -240,7 +476,7 @@ vytvoriť &lt;em&gt;rich editor&lt;/em&gt;. &lt;span
 &lt;p&gt;&lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt; - jazyk, ktorý sa prekladá do javascriptu, ale je typový. Odporúčam si ho pozrieť.&lt;/p&gt;
 &lt;h2 id=&quot;nice-to-know&quot;&gt;&lt;a href=&quot;#nice-to-know&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nice to know&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/storybooks/storybook&quot;&gt;Storybook&lt;/a&gt; - developerské rozrahnie pre UI komponenty. Vidíte, ako vyzerajú vaše komponenty . Jeden z dôsledkov použitia Storybook je že komponenty sa dajú lepšie znovu použiť a testovať. Pekný príklad použitia s &lt;a href=&quot;https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&amp;#x26;selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&amp;#x26;full=0&amp;#x26;addons=1&amp;#x26;stories=1&amp;#x26;panelRight=1&amp;#x26;addonPanel=storybook%2Factions%2Factions-panel&quot;&gt;Twitterom&lt;/a&gt;.
-&lt;img src=&quot;/portfolio/storybook-intro-5eb59c13f71816a543bf88170df88c36.gif&quot; alt=&quot;Storybook intro&quot;&gt;&lt;/p&gt;
+&lt;img src=&quot;/storybook-intro-5eb59c13f71816a543bf88170df88c36.gif&quot; alt=&quot;Storybook intro&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://prettier.io/&quot;&gt;Prettier&lt;/a&gt; - jeden z mojích ďalších obľúbených nástrojov. Slúži ako formátovač kódu, snáď všetky známe editory ho integrujú. Stačí stlačiť klávesovú skratku a naformátuje dokument.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://eslint.org/&quot;&gt;ESLint&lt;/a&gt; - &lt;em&gt;The pluggable linting utility for JavaScript and JSX.&lt;/em&gt; Vo všetkých mojich projektoch som ho používal. Niekedy je otravný :).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://palantir.github.io/tslint/&quot;&gt;TSLint&lt;/a&gt; - Ako ESLint ale pre TypeScript, na statickú analýzu kód.&lt;/p&gt;
@@ -251,240 +487,4 @@ vytvoriť &lt;em&gt;rich editor&lt;/em&gt;. &lt;span
 &lt;p&gt;Knižníc a utilít na prácu s Reactom a javascriptom je naozaj veľa. Myslím, že toto je len zlomok zoznamu, ktorý by vám mohol byť užitočný.
 Ďalších veľa knižníc môžete pozrieť &lt;a href=&quot;https://github.com/brillout/awesome-react-components&quot;&gt;tu&lt;/a&gt;. Knižnice, ktoré si vyberiete sú na vás. Záleží veľmi od toho,
 čo chcete docieliť, ale ja som zástanca toho, aby sme nevymýšľali druhýkrát koleso. Všetky knižnice sú &lt;em&gt;opensource&lt;/em&gt; a prípadne prerobenie ich, nemusí byť tak náročné.&lt;/p&gt;
-&lt;p&gt;Keď som písal blog, premýšľal som o tom, komu tento článok smerovať. Rozhodol som sa nakoniec pre ľudí, ktorí nemajú veľkú skúsenosť s Reactom. Dôsledkom toho som sa rozhodol nepopisovať nástroje ako &lt;em&gt;webpack&lt;/em&gt;, &lt;em&gt;parcel&lt;/em&gt;, &lt;em&gt;grunt&lt;/em&gt;, … Myslím, že to sú veci, ktoré na začiatku nie sú potrebné.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Necessary React libraries and skills!]]></title><description><![CDATA[In the last year, I’ve met many new libraries that are related to React.
-It’s especially due to the fact I didn’t have previous experience…]]></description><link>http://martinboksa.eu/necessary-react-libraries</link><guid isPermaLink="false">http://martinboksa.eu/necessary-react-libraries</guid><pubDate>Sun, 06 Jan 2019 11:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In the last year, I’ve met many new libraries that are related to React.
-It’s especially due to the fact I didn’t have previous experience and as well javascript is
-such fast programming language where a lot of libraries are released every day.
-I would like to postpone my experience here and bring you closer to what I think.
-What do I see and consider today to be necessary when working with React? Libraries can help those who start with it.
-I started with React at the official &lt;a href=&quot;https://reactjs.org/tutorial/tutorial.html&quot;&gt;tutorial&lt;/a&gt; from Facebook.
-When you understand the basic concepts and find out how to &lt;a href=&quot;(https://reactjs.org/docs/faq-structure.html)&quot;&gt;structure the React project&lt;/a&gt;, then you need to get some background to the current popular libraries. Here is my list of libraries.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Don’t overthink it.
-If you’re just starting a project, don’t spend more than five minutes on choosing a file structure.&lt;/p&gt;
-&lt;p&gt;&lt;cite&gt;React&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;boilerplate&quot;&gt;&lt;a href=&quot;#boilerplate&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Boilerplate&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/create-react-app&quot;&gt;create-react-app&lt;/a&gt; -
-if you do not have a React experience, this library will create a boilerplate for your application. It contains all the necessary configurations and dependencies, so you can write React and do not have to worry about anything.
-In the beginning, you do not have to know so many tools and connections. This utility will take care of it.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-text&quot;&gt;&lt;pre class=&quot;language-no-text&quot;&gt;&lt;code class=&quot;language-no-text&quot;&gt;What&amp;#39;s included? React, JSX, ES6, TypeScript and Flow syntax support.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;state-container&quot;&gt;&lt;a href=&quot;#state-container&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;State Container&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/reduxjs/react-redux&quot;&gt;Redux&lt;/a&gt; - this is &lt;em&gt;a global store with variables&lt;/em&gt;. Why? You do not have to send the variable through other &lt;em&gt;x&lt;/em&gt; components to depth. Instead, you connect it to the global store.
-It is commonly used in applications. For example user data, current theme, application status, …
-I recommend installing the &lt;a href=&quot;(https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)&quot;&gt;plugin&lt;/a&gt; to develop into Chrome.
-If you want to avoid a boilerplate (without shares, switches, …) which are associated with Redux, I recommend &lt;a href=&quot;https://github.com/rematch/rematch&quot;&gt;rematch&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 38.24091778202677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAACDklEQVQozxWRW1PaUBSF8//f2jrtjJ22TkdRCpaLIZeJEIiEJBBJgIRLggkk3KJV6Vjxba8eH/bs/fSdb63D7bcWPa3b9Jxo9ML2v41Oh6xLh12P3rIh7VObVkGT7ucqaQZPR2KBvkvnVLq5pN1cpm0o0yYUaeEXaGR+IO4hVbEcXCJ2RdzPm3jdWHjZGHjZmjjshniIu4jGCqbOFQJXQsviYem/UVQq4Ds87u9ErEMJkfcLI/MTuJQdk06e1kGDUl+hVb9Mf5np40qn18ylt51P+6RHHadBLUug4FagVleiZChRy6iRP1Eom4sUuDlm+Jm4iX6GhS/QwhOxi24Q2TUsezlkkcxMbRy2A7xmfSwCDXxTgOercMwas6rD7fKwzTLSSQXT2zMMjS/gZnYJfvuU0rGE1eyawRWEnTxi+xzPawNPKwOPbNYzDYGjouc1kIzrWAUNzJwynHYRM7fEKrmA22HAaFBFeFuiZFxDPKohncqY2RUENis9vqY/iY7luMEe0rANb+DYCrJFG5Evo69f4o4l62l5uEYeTucY3NzOYe4WKfariEZXbCoMUKbYKzK4gM17t1OFwTQkExVBX0QwqMF7T2bzDCxhZFUxNEsM+A2c1TiCKnwko/4VZvMEev0HTfsXiL0C65Vn5jKLW2efpmLYrUJXc2jKJ9CUnywqSzW+RujVMXEFDMxT/AdRGh4RjQzSbgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;&lt;/span&gt;
-    &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Redux&quot;
-        title=&quot;&quot;
-        src=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png&quot;
-        srcset=&quot;/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/1a291/redux.png 148w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/2bc4a/redux.png 295w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fb8a0/redux.png 590w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/526de/redux.png 885w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/fa2eb/redux.png 1180w,
-/portfolio/static/f4d335a45bb8c40a64b8333f4b6fb762/5f59d/redux.png 1569w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-  &lt;/span&gt;
-  &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://reactjs.org/docs/context.html&quot;&gt;React Context&lt;/a&gt; - it’s a relatively new feature in React. It is the theoretical replacement for Redux.
-&lt;strong&gt;Concept:&lt;/strong&gt; The &lt;code class=&quot;language-text&quot;&gt;provider&lt;/code&gt; is set up and his internal components can be read by the &lt;code class=&quot;language-text&quot;&gt;consumer&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 321px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 70.40498442367601%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADpklEQVQ4yz2Q21MaZxjGueuf1n+jN7loO+3YdNJmbBMTq2ZSTYwRT2AQUJfzcZFlOS7LAsthASWAICCHMZ5iRXPd9+lnO9OL3+x+O+8+3+99dHdD7e/7kUb348q/3A3LdDss0WRUpouCQEMpQJ1YgJp723RWkdh3jVGhyalGt4ybfpmuugW66OTpopUn3Zdxje5GGu5G5f/53FdxKofQCztRcNugLS2g82wKR347TvNRjLUEPg8e5sq4PingspPHxTGjqUL3ZVSjybCCCTObDDX6i9l100E6q6bYM0zNbIw6GYFOJZ7OazJdNhXq5kTqxv103VHpqp2ny+MsXbYeDAukux9WaTLQcDso0d24goujFPqZMD4dF3CipnCsSpj0ipCUJL7e9GLaxmM3GkMlzjaIenHZVnHeUOi8kcNZPUs6Fsa6KOGmp9JkrOEoaEc/F0NPk9ErpVBXorhpZLDhDuKr1w48MvsghoJY84XQFjwYqiLOGjkaH8oYHWb+C7zusx66ebo6yeMoJaAshnCcj7MBCbVUGPW0gIYSwbbJhpYiIs97YdlzICrw6DLLwaFMg2oaw6pMupt+kS66D6VmaFiTUM9EWVgMTfbjqJpgqwXRzQnIigGY3B60Mgcoij58lHgYOScOQ070WKf9chLdYpx0V6zYT60M2qpIdVlATQqjkYmgwNZpKTwaMo9KzIu2EoTFwSF94ILk5yAzNo1m7Cwto57w0UkhwiTCLLCdo49KGKrgIzXix6CSwEkhjJjLirh7jwUym7QHpQiHmGMHB/s7KAp2aBEnBM6M0L4ZSshJR+kgakk/6c7qEtVSzCLpoxIzaWZ5FKN2JL0WZrGLXNAKNWSGyG0wthDhDMj4zVB5C0KWLZQEDnGHlYqCCxXRRbp+SaRO4QBVyUM1yYNyzAE1vI+ky8QGjUh7DYg71yHa9PB8eAfe+p69rzHWEd5bh9vAztw2ZQO7UPy7pGvneKql3agknFSIcCQHLBR1GYnfXSWX8U+ybSzQvn6OrO9naW/1D7Kzs8uwSK6tRfKZlilo0ZPAbZDo2ELUYSRdXX5Y1Q45YKaEZxs8twafdQX6V9N4+eRbzD/9HvO/fofnjx/h6Q/f4PVvP8L0dgam5RewrMxhX/8KLsMbeHdWELTqSafFnaSwPiLOTfJaVsjGbt9ZnSPD8gxtLf5Oq3O/0PLLn+nti8eMn+jNzBQtPZ+ildkntL4wTZuLz+jDu1myrM6T07BE/wAzG3uw7M6TywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;&lt;/span&gt;
-    &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;React Context&quot;
-        title=&quot;&quot;
-        src=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png&quot;
-        srcset=&quot;/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/09b75/react-context.png 148w,
-/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/438fb/react-context.png 295w,
-/portfolio/static/a79300f87d3c6b1b8355615b213cdb07/fe66f/react-context.png 321w&quot;
-        sizes=&quot;(max-width: 321px) 100vw, 321px&quot;
-      /&gt;
-  &lt;/span&gt;
-  &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/mobxjs/mobx&quot;&gt;MobX&lt;/a&gt; - another option for state container.&lt;/p&gt;
-&lt;h2 id=&quot;storage&quot;&gt;&lt;a href=&quot;#storage&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Storage&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/marcuswestin/store.js/&quot;&gt;store.js&lt;/a&gt; - Helps with local storage-based applications. Older iPhone phones do not support it 😅.&lt;/p&gt;
-&lt;h2 id=&quot;server-communication&quot;&gt;&lt;a href=&quot;#server-communication&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Server Communication&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API&quot;&gt;fetch&lt;/a&gt; - native command since ES6 who can query the server.
-Some features such as &lt;strong&gt;abort&lt;/strong&gt; are missing.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/axios/axios&quot;&gt;Axios&lt;/a&gt; - an extended version of &lt;strong&gt;fetch&lt;/strong&gt;, based on XMLHttpRequests.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; axios &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;axios&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-axios
-  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/user?ID=12345&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;response&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;response&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/sindresorhus/ky&quot;&gt;Ky&lt;/a&gt; - my colleague advised me the work with this library, which is based on fetch. Comparison of Axios vs. Ky:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Yes. Axios is based on XMLHttpRequests, while Ky is based on Fetch. Axios has manually implemented a lot of things we get for free with Fetch. Fetch-based libs should be more stable and less buggy in general. Ky also has retry functionality.&lt;/p&gt;
-&lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://twitter.com/sindresorhus/status/1037763588826398720&quot;&gt;Sindre Sorhus&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/apollographql/apollo-client&quot;&gt;Apollo Client&lt;/a&gt; - Fully supported library for &lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQL&lt;/a&gt;. It also offers &lt;a href=&quot;https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm&quot;&gt;dev tools&lt;/a&gt; for Chrome. I recommend looking at it.
-&lt;strong&gt;GraphQL&lt;/strong&gt; at a glance: Multiple queries can be merged into one, or instead of chain calls to the server, they can be replaced by one.&lt;/p&gt;
-&lt;p&gt;&lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 40.59539918809201%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAACLUlEQVQozx2RaU8aARiE+bPtHzCmNjGm3vdJ61YRTIGCcoi7bCmwlnNlOZSgsirKIZ7UkCpWjUnTmW798GTej8+8Y+rUU3hqaPhzVUAjpyArSahnf+DlPIeHWgbtwwRu9Rhu9iJoFmQcJgOQVq3wL1twnBZR1USU4x6UFCcy4hJMnVoSjw2NLxd5XpUSrGkRNvIKnxo5/jpOsnWg8KfBZTHMek6iHvcz6bdT3XSybNwnasBIL4sRB9WAQNPvhvrfkM/nBdwVvTgtRlHfl3BdDqKtx9E6iOK6FEZzR3410WM+yO4JpOTPOEz4sfPdhd2wE5poQWx9AabHuornZp73ehiPe+s8OUjzRt9iJe9ia1/hTSnCy91vPEp6mBVXqQVXuf3VwuyajduijXGPhSm/lQmvwLBjmqansww61QxbewruKmk2C1Fe7IaN6jKrGZkXO0Zu+1gI2pjyCUy6JqhY5xiyzVH6MsItt8CQc5Ehh5mBlUmjsmHYOU2jfZTCQ1WF8Su09qM4y8vGOBJq2gZKETvia2ZsWsYhCoPYMNK7NA7H/ADcnybgXZ42mIJ7cRSm+0qc95XEK1Vtk8eqj0dpHxs5kZW0hwXZStW3SMU5Q58wQuf8AIWhHpr7u2kZ7+PK5AfaF0Zomx3k0mQfTW1d+XtbVmAsiULYjkzQBk22QY+vIydZEXPNIuqcgmQdhV8YwsrYOwx3v0V/1xvM9XfBPNyDj2O9mB/txczge/wDR2z8vnOY3KMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;&lt;/span&gt;
-    &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;GraphQL&quot;
-        title=&quot;&quot;
-        src=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png&quot;
-        srcset=&quot;/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/1a291/graphql.png 148w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/2bc4a/graphql.png 295w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fb8a0/graphql.png 590w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/526de/graphql.png 885w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/fa2eb/graphql.png 1180w,
-/portfolio/static/f96e4e3efe8134cd40bd5b493015061a/c0967/graphql.png 1478w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-  &lt;/span&gt;
-  &lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;css&quot;&gt;&lt;a href=&quot;#css&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CSS&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/styled-components/styled-components&quot;&gt;Styled Components&lt;/a&gt; - visualization of components in javascript using CSS. An advantage, for example: is to avoid class-name conflicts.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Button &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; styled&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;a&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`
-  display: inline-block;
-  color: #e62076;
-`&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Button href&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;http://www.martinboksa.eu/&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;GitHub&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Button&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://cssinjs.org/&quot;&gt;CSS-in-JS&lt;/a&gt; - a similar library like &lt;em&gt;Styled Components&lt;/em&gt;, we use it at work.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/JedWatson/classnames&quot;&gt;classnames&lt;/a&gt; - I’ve put it in CSS category, but it’s a utility that helps create class-names for components. It’s one of my most favorite tools. I think the code is much cleaner.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;classNames&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;foo&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; bar&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// =&gt; result class name: &apos;foo bar&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/contra/react-responsive&quot;&gt;react-responsive&lt;/a&gt; - a simple way to use the media query in React to create a responsive web.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; MediaQuery &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react-responsive&apos;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Example&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Device Test&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;MediaQuery query&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;(min-device-width: 1824px)&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;You have a huge screen&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;MediaQuery&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;f&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;MediaQuery query&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;(max-width: 1224px)&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;You are sized like a tablet or mobile phone though&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;MediaQuery&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/react-dnd/react-dnd&quot;&gt;React DnD&lt;/a&gt; - library to create a Drag &amp;#x26; Drop interface.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/atlassian/react-beautiful-dnd&quot;&gt;react-beautiful-dnd&lt;/a&gt; - at work, guys have an excellent experience with this &lt;em&gt;DnD&lt;/em&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;it has great performance.
-have plenty of examples to cover most of the basic cases.&lt;/p&gt;
-&lt;p&gt;&lt;cite&gt;Denis Slávik&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/react-spring/react-spring&quot;&gt;React Spring&lt;/a&gt; - animation library. I have a very good experience with the performance you can achieve with that. I recommend looking at &lt;a href=&quot;https://blog.usejournal.com/why-react-needed-yet-another-animation-library-introducing-react-spring-8212e424c5ce&quot;&gt;“Why does React need another animation library?”&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/portfolio/dragndrop-c409f1a43fcb00ed186997b56efe72ab.gif&quot; alt=&quot;React Spring - Drag&amp;#x26;Drop&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://semantic-ui.com/&quot;&gt;Semantic UI&lt;/a&gt; - UI framework to create a responsive web. Contains completed components.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://react.carbondesignsystem.com/&quot;&gt;Carbon Components&lt;/a&gt; - Collection of different UI components from IBM.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://developer.microsoft.com/en-us/fabric#/components&quot;&gt;Fabric&lt;/a&gt; - Various components from Microsoft.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;There are missing libraries like React Bootstrap or Material UI, libraries were selected so that you could create a nice web as simple as possible 📚.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;internationalization&quot;&gt;&lt;a href=&quot;#internationalization&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Internationalization&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/yahoo/react-intl&quot;&gt;React Intl&lt;/a&gt; - a translation library that also provides formatting of dates, numbers, strings, pluralizations, …&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/i18next/react-i18next&quot;&gt;react-i18next&lt;/a&gt; - internationalization for &lt;em&gt;reactjs&lt;/em&gt; / &lt;em&gt;reactnative&lt;/em&gt;, which is based on i18next.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ratson/react-intl-redux&quot;&gt;React Intl Redux&lt;/a&gt; - translations are kept in redux store.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://facebookincubator.github.io/fbt/&quot;&gt;FBT&lt;/a&gt; - a framework for translation, used in Facebook.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;In this part, I wrote mainly from the experience of my colleagues.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;testing&quot;&gt;&lt;a href=&quot;#testing&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://jestjs.io/en/&quot;&gt;Jest&lt;/a&gt; - test platform with zero configuration. It is also used on &lt;em&gt;Facebook&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/airbnb/enzyme&quot;&gt;Enzyme&lt;/a&gt; - a test tool from &lt;em&gt;Airbnb&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;meta-tags&quot;&gt;&lt;a href=&quot;#meta-tags&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Meta Tags&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/gaearon/react-document-title&quot;&gt;React Document Title&lt;/a&gt; - set &lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;title&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/nfl/react-helmet&quot;&gt;React Helmet&lt;/a&gt; - tool for &lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt; management.&lt;/p&gt;
-&lt;h2 id=&quot;forms&quot;&gt;&lt;a href=&quot;#forms&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Forms&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/erikras/redux-form&quot;&gt;Redux Form&lt;/a&gt; - State of forms is in the state container. Need to know &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot;&gt;HOC&lt;/a&gt; and &lt;a href=&quot;https://github.com/reduxjs/react-redux&quot;&gt;Redux&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://jaredpalmer.com/formik&quot;&gt;Formik&lt;/a&gt; - complete solution for forms, including validation, … One of the most popular solutions.&lt;/p&gt;
-&lt;h2 id=&quot;utilities&quot;&gt;&lt;a href=&quot;#utilities&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Utilities&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://lodash.com/docs/4.17.11&quot;&gt;lodash&lt;/a&gt; - Extends javascript with many interesting functions like &lt;em&gt;debounce&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://momentjs.com/&quot;&gt;Moment.js&lt;/a&gt; - parsing, manipulating, and displaying the date and time 📅. There are many more options to work with the date.
-I think it’s &lt;a href=&quot;https://hackernoon.com/why-you-should-choose-date-fns-over-moment-js-in-your-nodejs-applications-116d1a709c43&quot;&gt;not a good utility&lt;/a&gt;. But it is popular and known in the world of javascript.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://date-fns.org/&quot;&gt;date-fns&lt;/a&gt; - instead of &lt;em&gt;momentjs&lt;/em&gt; you can use this library.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Good library if you’re looking to replace Moment.js for one reason or another. Immutable too.&lt;/p&gt;
-&lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://twitter.com/dan_abramov/status/805030922785525760?lang=en&quot;&gt;Dan Abramov&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;rich-editor&quot;&gt;&lt;a href=&quot;#rich-editor&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rich Editor&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/draft-js&quot;&gt;Draft.js&lt;/a&gt; - a framework which creates a &lt;em&gt;rich editor&lt;/em&gt;.
-&lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 563px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 40.14209591474245%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAv0lEQVQoz5WSWw6CMBBFu/9FKYKSqPzLL7AAwIZnW67eSUpqIhomOZ12oCeZSZVzDrNxsNbCGCOEezLPsxDWyDRNUqeDLMsCZayD7h2GYRD6vhf8vus6NE0DrTXGcRQJ4be2baXOoIxS5ZyFfrZykVBU17VknnmJ+VdQ5lG0fgvfBtsn/rzFKuTP9yzDJU1xOEaIkwRFUWJvrC1zuI88f4vOuF5viE4xyqr6aGWXcKvlcC57UFz8Mwnzv5ltzfEF3ctyimWDEIMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;&lt;/span&gt;
-    &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Rich Editor&quot;
-        title=&quot;&quot;
-        src=&quot;/portfolio/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png&quot;
-        srcset=&quot;/portfolio/static/1539cd7870523d529ad6c5901a8dad27/d8532/rich-editor.png 148w,
-/portfolio/static/1539cd7870523d529ad6c5901a8dad27/9bf66/rich-editor.png 295w,
-/portfolio/static/1539cd7870523d529ad6c5901a8dad27/b0abc/rich-editor.png 563w&quot;
-        sizes=&quot;(max-width: 563px) 100vw, 563px&quot;
-      /&gt;
-  &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;type-checking&quot;&gt;&lt;a href=&quot;#type-checking&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Type Checking&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/prop-types&quot;&gt;PropTypes&lt;/a&gt; - check &lt;em&gt;props&lt;/em&gt; in runtime.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://flow.org/en/docs/frameworks/react/&quot;&gt;flow&lt;/a&gt; - static typechecker.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt; - a language that translates into javascript but has types. I recommend seeing it.&lt;/p&gt;
-&lt;h2 id=&quot;nice-to-know&quot;&gt;&lt;a href=&quot;#nice-to-know&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nice to know&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/storybooks/storybook&quot;&gt;Storybook&lt;/a&gt; - developer interface for UI Components. You see how your components look (imo, components can be simple reused and tested). A nice example of using &lt;a href=&quot;https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&amp;#x26;selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&amp;#x26;full=0&amp;#x26;addons=1&amp;#x26;stories=1&amp;#x26;panelRight=1&amp;#x26;addonPanel=storybook%2Factions%2Factions-panel&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/portfolio/storybook-intro-5eb59c13f71816a543bf88170df88c36.gif&quot; alt=&quot;Storybook intro&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://prettier.io/&quot;&gt;Prettier&lt;/a&gt; - one of my favorite tools. It’s a code formatter and is integrated into all well-known editors. Just press the shortcut key to format the document.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://eslint.org/&quot;&gt;ESLint&lt;/a&gt; - &lt;em&gt;The pluggable linting utility for JavaScript and JSX.&lt;/em&gt;
-I used it in all my javascript projects. Sometimes it’s annoying.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://palantir.github.io/tslint/&quot;&gt;TSLint&lt;/a&gt; - As ESLint but for TypeScript to static code analysis.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.pixijs.com/&quot;&gt;PixiJS&lt;/a&gt; - Last year I was working on graphical editor based on React and PixiJS. I can fully recommend both.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt; - helps to create pages without &lt;em&gt;“a headache”&lt;/em&gt;. For example, this technology has been used in &lt;a href=&quot;https://reactjs.org/docs/getting-started.html&quot;&gt;React Docs&lt;/a&gt; or in this blog.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://sentry.io/welcome/&quot;&gt;SENTRY&lt;/a&gt; - the tool I used to capture bugs in production. I can recommend it. Suitable to combine perfectly with React, especially when adding &lt;a href=&quot;https://reactjs.org/docs/error-boundaries.html&quot;&gt;Error Boundaries&lt;/a&gt; in the &lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;componentDidCatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt; method.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;There is a lot of libraries and utilities to work with React and javascript. I think this is just a fraction of the list that could be useful to you. You can see more libraries &lt;a href=&quot;https://github.com/brillout/awesome-react-components&quot;&gt;here&lt;/a&gt;.
-The libraries you choose are up to you. It depends on what you want to achieve. All libraries are &lt;em&gt;opensource&lt;/em&gt; and if necessary, the redesign may not be so demanding.&lt;/p&gt;
-&lt;p&gt;When I was writing a blog, I was thinking about who will read this article. I finally decided for people who do not have a great experience with React. As a result, I decided not to describe the tools like &lt;em&gt;webpack&lt;/em&gt;, &lt;em&gt;parcel&lt;/em&gt;, &lt;em&gt;grunt&lt;/em&gt;, … I think these are things that are not necessary at the beginning.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;Keď som písal blog, premýšľal som o tom, komu tento článok smerovať. Rozhodol som sa nakoniec pre ľudí, ktorí nemajú veľkú skúsenosť s Reactom. Dôsledkom toho som sa rozhodol nepopisovať nástroje ako &lt;em&gt;webpack&lt;/em&gt;, &lt;em&gt;parcel&lt;/em&gt;, &lt;em&gt;grunt&lt;/em&gt;, … Myslím, že to sú veci, ktoré na začiatku nie sú potrebné.&lt;/p&gt;</content:encoded></item></channel></rss>
