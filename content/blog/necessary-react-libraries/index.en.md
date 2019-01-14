@@ -4,13 +4,13 @@ date: '2019-01-06T12:00:00'
 language: en
 ---
 
-In the last year I've met many new libraries that are related to React.
-It's especially due to fact I didn't have previous experience and as well javascript is
+In the last year, I've met many new libraries that are related to React.
+It's especially due to the fact I didn't have previous experience and as well javascript is
 such fast programming language that a lot of libraries are released every day.
 I would like to postpone my experience here and bring you closer to what I think.
 What do I see and consider today to be necessary when working with React? Libraries can help those who start with it.
-I started with React at official [tutorial](https://reactjs.org/tutorial/tutorial.html) from Facebook.
-When you understand the basic concepts and find out how to [structure the React project](<(https://reactjs.org/docs/faq-structure.html)>), then you need get some background to the current popular libraries. Here is a my list of libraries.
+I started with React at the official [tutorial](https://reactjs.org/tutorial/tutorial.html) from Facebook.
+When you understand the basic concepts and find out how to [structure the React project](<(https://reactjs.org/docs/faq-structure.html)>), then you need to get some background to the current popular libraries. Here is my list of libraries.
 
 > Don’t overthink it.
 > If you’re just starting a project, don’t spend more than five minutes on choosing a file structure.
@@ -21,7 +21,7 @@ When you understand the basic concepts and find out how to [structure the React 
 
 [create-react-app](https://github.com/facebook/create-react-app) -
 if you do not have a React experience, this library will create a boilerplate for your application. It contains all the necessary configurations and dependencies, so you can write React and do not have to worry about anything.
-At the beginning you do not have to know so many tools and connections. This utility will take care of it.
+In the beginning, you do not have to know so many tools and connections. This utility will take care of it.
 
 ```no-text
 What's included? React, JSX, ES6, TypeScript and Flow syntax support.
@@ -29,15 +29,15 @@ What's included? React, JSX, ES6, TypeScript and Flow syntax support.
 
 ## State Container
 
-[Redux](https://github.com/reduxjs/react-redux) - this is _global store with variables_. Why? You do not have to send the variable through other _x_ components to depth. Instead you connect it to the global store.
-It is commonly used in applications. For example: user data, current theme, application status, ...
-I recommend installing [plugin](<(https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)>) to develop into Chrome.
+[Redux](https://github.com/reduxjs/react-redux) - this is _a global store with variables_. Why? You do not have to send the variable through other _x_ components to depth. Instead, you connect it to the global store.
+It is commonly used in applications. For example user data, current theme, application status, ...
+I recommend installing the [plugin](<(https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)>) to develop into Chrome.
 If you want to avoid a boilerplate (without shares, switches, ...) which are associated with Redux, I recommend [rematch](https://github.com/rematch/rematch).
 
 ![Redux](./redux.png)
 
 [React Context](https://reactjs.org/docs/context.html) - it's a relatively new feature in React. It is the theoretical replacement for Redux.
-**Concept:** The `provider` is set up and his internal components can be read by `consumer`.
+**Concept:** The `provider` is set up and his internal components can be read by the `consumer`.
 
 ![React Context](./react-context.png)
 
@@ -91,7 +91,7 @@ render(<Button href="http://www.martinboksa.eu/">GitHub</Button>)
 
 [CSS-in-JS](https://cssinjs.org/) - a similar library like _Styled Components_, we use it at work.
 
-[classnames](https://github.com/JedWatson/classnames) - I've put it in CSS category, but it's a utility that helps create class-names for components. It's one of my most favorite tool. I think the code is much more cleaner.
+[classnames](https://github.com/JedWatson/classnames) - I've put it in CSS category, but it's a utility that helps create class-names for components. It's one of my most favorite tools. I think the code is much cleaner.
 
 ```javascript
 classNames('foo', { bar: true }) // => result class name: 'foo bar'
@@ -119,7 +119,7 @@ Drag&Drop rozhrania.
 [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) - at work, guys have an excellent experience with this _DnD_.
 
 > it has great performance.
-> have a plenty of examples to cover most of the basic cases.
+> have plenty of examples to cover most of the basic cases.
 >
 > <cite>Denis Slávik</cite>
 
@@ -145,11 +145,11 @@ _There are missing libraries like React Bootstrap or Material UI, libraries were
 
 [FBT](https://facebookincubator.github.io/fbt/) - a framework for translation, used in Facebook.
 
-_In this part I wrote mainly from the experience of my colleagues._
+_In this part, I wrote mainly from the experience of my colleagues._
 
 ## Testing
 
-[Jest](https://jestjs.io/en/) - test platform with zero configuration. It is also used in _Facebook_.
+[Jest](https://jestjs.io/en/) - test platform with zero configuration. It is also used on _Facebook_.
 
 [Enzyme](https://github.com/airbnb/enzyme) - a test tool from _Airbnb_.
 
@@ -180,7 +180,7 @@ I think it's [not a good utility](https://hackernoon.com/why-you-should-choose-d
 
 ## Rich Editor
 
-[Draft.js](https://github.com/facebook/draft-js) - a framework which create a _rich editor_.
+[Draft.js](https://github.com/facebook/draft-js) - a framework which creates a _rich editor_.
 ![Rich Editor](./rich-editor.png)
 
 ## Type Checking
@@ -197,22 +197,22 @@ I think it's [not a good utility](https://hackernoon.com/why-you-should-choose-d
 
 ![Storybook intro](./storybook-intro.gif)
 
-[Prettier](https://prettier.io/) - one of my favorite tools. It's a code formatter and is integrated in all well-known editors. Just press the shortcut key to format the document.
+[Prettier](https://prettier.io/) - one of my favorite tools. It's a code formatter and is integrated into all well-known editors. Just press the shortcut key to format the document.
 
 [ESLint](https://eslint.org/) - _The pluggable linting utility for JavaScript and JSX._
 I used it in all my javascript projects. Sometimes it's annoying.
 
 [TSLint](https://palantir.github.io/tslint/) - As ESLint but for TypeScript to static code analysis.
 
-[PixiJS](http://www.pixijs.com/) - Last year i was working on graphical editor based on React and PixiJS. I can fully recommend both.
+[PixiJS](http://www.pixijs.com/) - Last year I was working on graphical editor based on React and PixiJS. I can fully recommend both.
 
-[Gatsby](https://www.gatsbyjs.org/) - helps to create pages without _"headache"_. For example, this technology has been used in [React Docs](https://reactjs.org/docs/getting-started.html) or in this blog.
+[Gatsby](https://www.gatsbyjs.org/) - helps to create pages without _"a headache"_. For example, this technology has been used in [React Docs](https://reactjs.org/docs/getting-started.html) or in this blog.
 
 [SENTRY](https://sentry.io/welcome/) - the tool I used to capture bugs in production. I can recommend it. Suitable to combine perfectly with React, especially when adding [Error Boundaries](https://reactjs.org/docs/error-boundaries.html) in the `javascript÷componentDidCatch()` method.
 
 ---
 
 There is a lot of libraries and utilities to work with React and javascript. I think this is just a fraction of the list that could be useful to you. You can see more libraries [here](https://github.com/brillout/awesome-react-components).
-The libraries you choose are up to you. It depends on what you want to achieve. All libraries are _opensource_ and if necessary, redesign may not be so demanding.
+The libraries you choose are up to you. It depends on what you want to achieve. All libraries are _opensource_ and if necessary, the redesign may not be so demanding.
 
 When I was writing a blog, I was thinking about who will read this article. I finally decided for people who do not have a great experience with React. As a result, I decided not to describe the tools like _webpack_, _parcel_, _grunt_, ... I think these are things that are not necessary at the beginning.
