@@ -114,7 +114,6 @@ const Example = () => (
 ```
 
 [React DnD](https://github.com/react-dnd/react-dnd) - library to create a Drag & Drop interface.
-Drag&Drop rozhrania.
 
 [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) - at work, guys have an excellent experience with this _DnD_.
 
