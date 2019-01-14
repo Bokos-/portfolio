@@ -10,7 +10,7 @@ module.exports = {
       linkedIn: `martin-boksa`,
     },
   },
-  pathPrefix: '/portfolio',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
