@@ -1,6 +1,6 @@
 ---
 title: Čo považujem za nevyhnutné pri Reacte?
-date: '2019-01-14T22:54:00'
+date: '2019-01-19T17:00:00'
 language: sk
 ---
 
