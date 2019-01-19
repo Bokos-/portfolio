@@ -20,7 +20,7 @@ class NotFoundPage extends React.Component {
             title={data.site.siteMetadata.title}
             language={language}
           >
-            <SEO title="404: Not Found" />
+            <SEO title="404: Not Found" lang={language} />
             <h1>Not Found</h1>
             <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
           </Layout>

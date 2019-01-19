@@ -49,7 +49,11 @@ class BlogPostTemplate extends React.Component {
         title={siteTitle}
         language={language}
       >
-        <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <SEO
+          title={post.frontmatter.title}
+          description={post.excerpt}
+          lang={language}
+        />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -134,6 +138,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       fileAbsolutePath
       html
+      excerpt
       fields {
         tag
         availableLanguages {
