@@ -4,13 +4,13 @@ date: '2019-01-14T22:54:00'
 language: en
 ---
 
-In the last year, I've met many new libraries that are related to React.
-It's especially due to the fact I didn't have previous experience and as well javascript is
-such fast programming language where a lot of libraries are released every day.
-I would like to postpone my experience here and bring you closer to what I think.
+Last year, I've discovered many new libraries that are related to React.
+It's especially due to the fact I didn't have previous experience and also javascript is
+such fast programming language with a lot of libraries released every day.
+On this blog, I would like to describe my experience with React and also bring you closer to what I think:
 What do I see and consider today to be necessary when working with React? Libraries can help those who start with it.
 I started with React at the official [tutorial](https://reactjs.org/tutorial/tutorial.html) from Facebook.
-When you understand the basic concepts and find out how to [structure the React project](<(https://reactjs.org/docs/faq-structure.html)>), then you need to get some background to the current popular libraries. Here is my list of libraries.
+After you understand the basic terms and find out how to [structure the React project](<(https://reactjs.org/docs/faq-structure.html)>), then you need to get some background to the current popular libraries. Here is the list of libraries I find important.
 
 > Don’t overthink it.
 > If you’re just starting a project, don’t spend more than five minutes on choosing a file structure.
@@ -45,11 +45,11 @@ If you want to avoid a boilerplate (without shares, switches, ...) which are ass
 
 ## Storage
 
-[store.js](https://github.com/marcuswestin/store.js/) - Helps with local storage-based applications. Older iPhone phones do not support it 😅.
+[store.js](https://github.com/marcuswestin/store.js/) - Helps with local storage-based applications. Older iPhones do not support it 😅.
 
 ## Server Communication
 
-[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - native command since ES6 who can query the server.
+[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - native command from ES6 which can query the server.
 Some features such as **abort** are missing.
 
 [Axios](https://github.com/axios/axios) - an extended version of **fetch**, based on XMLHttpRequests.
@@ -122,7 +122,7 @@ const Example = () => (
 >
 > <cite>Denis Slávik</cite>
 
-[React Spring](https://github.com/react-spring/react-spring) - animation library. I have a very good experience with the performance you can achieve with that. I recommend looking at ["Why does React need another animation library?"](https://blog.usejournal.com/why-react-needed-yet-another-animation-library-introducing-react-spring-8212e424c5ce).
+[React Spring](https://github.com/react-spring/react-spring) - animation library. I have a very good experience with the performance it can achieve. I recommend looking at ["Why does React need another animation library?"](https://blog.usejournal.com/why-react-needed-yet-another-animation-library-introducing-react-spring-8212e424c5ce).
 
 ![React Spring - Drag&Drop](./dragndrop.gif)
 
@@ -192,7 +192,7 @@ I think it's [not a good utility](https://hackernoon.com/why-you-should-choose-d
 
 ## Nice to know
 
-[Storybook](https://github.com/storybooks/storybook) - developer interface for UI Components. You see how your components look (imo, components can be simple reused and tested). A nice example of using [Twitter](https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybook%2Factions%2Factions-panel).
+[Storybook](https://github.com/storybooks/storybook) - developer interface for UI Components. You see how your components look (imo, components can be simple reused and tested). A nice example of using [here](https://saurabhnemade.github.io/react-twitter-embed/?selectedKind=Twitter%20Timeline%20Embed&selectedStory=Timeline%20Profile%20%28With%20Screen%20Name%29&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybook%2Factions%2Factions-panel).
 
 ![Storybook intro](./storybook-intro.gif)
 
@@ -211,7 +211,7 @@ I used it in all my javascript projects. Sometimes it's annoying.
 
 ---
 
-There is a lot of libraries and utilities to work with React and javascript. I think this is just a fraction of the list that could be useful to you. You can see more libraries [here](https://github.com/brillout/awesome-react-components).
+There are lot of libraries and utilities we can use to work with React and javascript. I think this is just a fraction of the list that could be useful to you. You can see more libraries [here](https://github.com/brillout/awesome-react-components).
 The libraries you choose are up to you. It depends on what you want to achieve. All libraries are _opensource_ and if necessary, the redesign may not be so demanding.
 
-When I was writing a blog, I was thinking about who will read this article. I finally decided for people who do not have a great experience with React. As a result, I decided not to describe the tools like _webpack_, _parcel_, _grunt_, ... I think these are things that are not necessary at the beginning.
+When I was writing the blog, I was thinking about who will read this article. I finally decided to dedicate it to people who do not have a great experience with React. Consequently, I did not to describe the tools like _webpack_, _parcel_, _grunt_, ... I think these are things that are not necessary at the beginning.
