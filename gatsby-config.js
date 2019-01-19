@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Martin Bokša Blog`,
     author: `Martin Bokša`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Personal blog by Martin Bokša who is technology enthusiast, lives in Brno and work primary in React 🍻.`,
     siteUrl: `http://martinboksa.eu`,
     gitUrl: `https://github.com/martinboksa/portfolio/`,
     social: {
