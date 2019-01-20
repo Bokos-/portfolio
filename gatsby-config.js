@@ -96,5 +96,6 @@ module.exports = {
         rel: 'nofollow',
       },
     },
+    `gatsby-plugin-netlify`
   ],
 }

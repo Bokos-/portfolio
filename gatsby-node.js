@@ -40,7 +40,7 @@ function createPost(graphql, actions, language) {
       throw result.errors
     }
 
-    const { createPage } = actions
+    const { createPage, createRedirect } = actions
 
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
@@ -66,6 +66,15 @@ function createPost(graphql, actions, language) {
           language,
         },
       })
+
+      if (language === DEFAULT_LANGUAGE) {
+        createRedirect({
+          fromPath: `/${language}${slug}`,
+          toPath: slug,
+          isPermanent: true,
+          redirectInBrowser: true,
+        })
+      }
     })
   })
 }

@@ -159,3 +159,10 @@ pre[class*='language-'] {
     display: inline-block;
   }
 }
+
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
