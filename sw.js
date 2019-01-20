@@ -26,32 +26,36 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-e9c61214f3d13b269b0f.js"
+    "url": "webpack-runtime-8cee5bc4b65be33d4251.js"
   },
   {
-    "url": "app.d1e15a41aace795c36f5.css"
+    "url": "app.ffe74fbe62b5039ef7aa.css"
   },
   {
-    "url": "app-d18a276ba9039f059b02.js"
+    "url": "app-88fa4fa0cac2b4131f6d.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-92177e411fdb0fbc4ac4.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "78751327222a0d02830c266980a06f79"
+    "revision": "bc1ab2d321560f3d0e8b0fabfdee3517"
   },
   {
     "url": "component---src-pages-404-js-67b0bffe1fc7fcf9345f.js"
   },
   {
-    "url": "0-fcfd3072fb18d40f8261.js"
+    "url": "0-fbeefdb10d7cd3e5feca.js"
   },
   {
     "url": "static/d/68/path---404-html-516-62a-xpVcPyeZwXHMFEmzbMsepl0WRI.json"
   },
   {
     "url": "static/d/941/path---offline-plugin-app-shell-fallback-a-30-c5a-xpVcPyeZwXHMFEmzbMsepl0WRI.json"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "b773e901ef06ac93343dc05e67540787"
   },
   {
     "url": "manifest.webmanifest",
