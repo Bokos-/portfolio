@@ -35,6 +35,7 @@ function Bio() {
                     <a
                       href={`https://www.linkedin.com/in/${social.linkedIn}/`}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {author}
                     </a>

@@ -87,6 +87,7 @@ class Layout extends React.Component {
                   <a
                     href={`https://github.com/${social.github}/`}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     github
                   </a>{' '}
@@ -94,13 +95,18 @@ class Layout extends React.Component {
                   <a
                     href={`https://www.linkedin.com/in/${social.linkedIn}/`}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     linked in
                   </a>
                   <span id="footer-right-info">
                     {' '}
                     <Link to="/sk">sk</Link> | <Link to="/">en</Link> |{' '}
-                    <a href={`${__PATH_PREFIX__}/rss.xml`} target="_blank">
+                    <a
+                      href={`${__PATH_PREFIX__}/rss.xml`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       rss
                     </a>
                   </span>
