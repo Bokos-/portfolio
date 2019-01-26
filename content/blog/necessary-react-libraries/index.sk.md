@@ -32,7 +32,7 @@ What's included? React, JSX, ES6, TypeScript and Flow syntax support.
 
 ## State Container
 
-[Redux](https://github.com/reduxjs/react-redux) - ide o _globálny obchod s premennými_. Je vhodný k tomu,
+[Redux](https://github.com/reduxjs/react-redux) - ide o _globálne uložisko s premennými_. Je vhodný k tomu,
 aby ste nemuseli preposielať premennú cez ďalších _x_ komponent do hĺbky. Tak ju
 napojíte na globálny obchod. Použitie napríklad: user data, aktuálna téma, stav aplikácie, ...
 Používa sa často. Odporúčam si doinštalovať na vyvíjanie [plugin](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) do chrome.

@@ -28,7 +28,7 @@ function Bio() {
                 id="about.me"
                 defaultMessage="Personal blog by
               {author}
-              who is technology enthusiast, lives in Brno and work primary in
+              who is technology enthusiast, lives in Brno and works primary in
               React {emoji}."
                 values={{
                   author: (
